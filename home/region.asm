@@ -7,7 +7,7 @@ IsInJohto::
 	ld c, a
 	call GetWorldMapLocation
 
-	cp LANDMARK_FAST_SHIP
+	;cp LANDMARK_FAST_SHIP
 	jr z, .Johto
 
 	cp LANDMARK_SPECIAL
@@ -24,7 +24,7 @@ IsInJohto::
 	jr nc, .Kanto
 
 .Johto:
-	xor a ; JOHTO_REGION
+	xor a ; KALOS_REGION
 	ret
 
 .Kanto:

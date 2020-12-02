@@ -6199,10 +6199,10 @@ LoadEnemyMon:
 ; Moreover, due to the check not being translated to feet+inches, all Magikarp
 ; smaller than 4'0" may be caught by the filter, a lot more than intended.
 	ld a, [wMapGroup]
-	cp GROUP_LAKE_OF_RAGE
+	;cp GROUP_LAKE_OF_RAGE
 	jr z, .Happiness
 	ld a, [wMapNumber]
-	cp MAP_LAKE_OF_RAGE
+	;cp MAP_LAKE_OF_RAGE
 	jr z, .Happiness
 ; 40% chance of not flooring
 	call Random

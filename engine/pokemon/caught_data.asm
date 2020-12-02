@@ -76,7 +76,7 @@ CheckPartyFullAfterContest:
 	call GetPartyLocation
 	ld a, [hl]
 	and CAUGHT_GENDER_MASK
-	ld b, LANDMARK_NATIONAL_PARK
+	;ld b, LANDMARK_NATIONAL_PARK
 	or b
 	ld [hl], a
 	xor a
@@ -136,7 +136,7 @@ CheckPartyFullAfterContest:
 	ld hl, sBoxMon1CaughtLocation
 	ld a, [hl]
 	and CAUGHT_GENDER_MASK
-	ld b, LANDMARK_NATIONAL_PARK
+	;ld b, LANDMARK_NATIONAL_PARK
 	or b
 	ld [hl], a
 	call CloseSRAM
@@ -178,10 +178,10 @@ SetBoxmonOrEggmonCaughtData:
 	ld b, a
 	ld a, [wMapNumber]
 	ld c, a
-	cp MAP_POKECENTER_2F
+	;cp MAP_POKECENTER_2F
 	jr nz, .NotPokecenter2F
 	ld a, b
-	cp GROUP_POKECENTER_2F
+	;cp GROUP_POKECENTER_2F
 	jr nz, .NotPokecenter2F
 
 	ld a, [wBackupMapGroup]
