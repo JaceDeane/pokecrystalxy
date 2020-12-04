@@ -1,5 +1,6 @@
 SECTION "Map Scripts 1", ROMX
 
+INCLUDE "maps/VanivilleTown.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
 

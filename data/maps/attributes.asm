@@ -99,6 +99,7 @@ ENDM
 	;map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	;connection west, Route29, ROUTE_29, 0
 	;connection east, Route27, ROUTE_27, 0
-	
+	map_attributes VanivilleTown, VANIVILLE_TOWN, $05, 0;NORTH
+	;connection north, Route1, ROUTE_1, 5
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0

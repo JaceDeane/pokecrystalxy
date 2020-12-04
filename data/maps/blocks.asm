@@ -1,5 +1,8 @@
 SECTION "Map Blocks 1", ROMX
 
+VanivilleTown_Blocks:
+	INCBIN "maps/VanivilleTown.blk"
+	
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
 

@@ -1,5 +1,6 @@
 ; Tilesets indexes (see data/tilesets.asm)
 	const_def 1
+	const TILESET_KALOS                ; 01
 	const TILESET_JOHTO                ; 01
 	const TILESET_JOHTO_MODERN         ; 02
 	const TILESET_KANTO                ; 03

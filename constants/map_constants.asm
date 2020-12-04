@@ -29,7 +29,7 @@ ENDM
 
 	newgroup                                                      ;  1
 
-	;map_const VANIVILLE_TOWN,                              10,  9 ;  1
+	map_const VANIVILLE_TOWN,                              10,  9 ;  1
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ; 3  
 	;map_const RIVALS_HOUSE,                                 4,  4 ;  

@@ -8,14 +8,14 @@ ENDM
 
 SECTION "Tileset Data 1", ROMX
 
-TilesetKantoGFX::
-INCBIN "gfx/tilesets/kanto.2bpp.lz"
+TilesetKalosGFX::
+INCBIN "gfx/tilesets/kalos.2bpp.lz"
 
-TilesetKantoMeta::
-INCBIN "data/tilesets/kanto_metatiles.bin"
+TilesetKalosMeta::
+INCBIN "data/tilesets/kalos_metatiles.bin"
 
-TilesetKantoColl::
-INCLUDE "data/tilesets/kanto_collision.asm"
+TilesetKalosColl::
+INCLUDE "data/tilesets/kalos_collision.asm"
 
 Tileset0GFX::
 TilesetJohtoGFX::
@@ -337,3 +337,12 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta::
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+TilesetKantoGFX::
+INCBIN "gfx/tilesets/kanto.2bpp.lz"
+
+TilesetKantoMeta::
+INCBIN "data/tilesets/kanto_metatiles.bin"
+
+TilesetKantoColl::
+INCLUDE "data/tilesets/kanto_collision.asm"
