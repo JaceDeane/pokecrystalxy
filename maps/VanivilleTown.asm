@@ -283,7 +283,7 @@ VanivilleTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 13,  5, PLAYERS_HOUSE_1F, 1
+	warp_event 11,  5, PLAYERS_HOUSE_1F, 1
 	;warp_event  3, 11, PLAYERS_NEIGHBORS_HOUSE, 1
 	;warp_event 11, 13, ELMS_HOUSE, 1
 
@@ -292,12 +292,12 @@ VanivilleTown_MapEvents:
 	coord_event  1,  9, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene2
 
 	def_bg_events
-	bg_event 10, 12, BGEVENT_READ, VanivilleTownSign
-	bg_event 12,  9, BGEVENT_READ, VanivilleTownPlayersHouseSign
-	bg_event 16,  9, BGEVENT_READ, VanivilleTownElmsLabSign
-	bg_event  3,  9, BGEVENT_READ, VanivilleTownElmsHouseSign
+	bg_event  4,  6, BGEVENT_READ, VanivilleTownSign
+	bg_event 10, 10, BGEVENT_READ, VanivilleTownPlayersHouseSign
+	bg_event 14, 10, BGEVENT_READ, VanivilleTownElmsLabSign
+	bg_event  0, 10, BGEVENT_READ, VanivilleTownElmsHouseSign
 
 	def_object_events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
-	object_event 11, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownFisherScript, -1
+	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownFisherScript, -1
 	object_event  3,  6, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
