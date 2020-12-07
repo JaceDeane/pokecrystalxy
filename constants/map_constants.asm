@@ -28,7 +28,7 @@ ENDM
 	const_def
 
 	newgroup                                                      ;  1
-
+	
 	map_const VANIVILLE_TOWN,                              10,  9 ;  1
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ; 3  
@@ -36,8 +36,10 @@ ENDM
 	;map_const TIERNOS_HOUSE,                                4,  4 ;  
 	map_const ROUTE_1,                                      3,  5 ;  6
 
-	; newgroup                                                      ;  2
-
+	newgroup                                                      ;  2
+	
+	map_const LUMIOSE_CITY_SOUTH,                          40,  9 ;  1
+	map_const LUMIOSE_CITY_NORTH,                          52,  9 ;  2
 	; map_const NATIONAL_PARK,                               20, 27 ;  
 	; map_const VICTORY_ROAD,                                10, 36 ;  
 	; map_const ROUTE_19,                                    10, 18 ;  5

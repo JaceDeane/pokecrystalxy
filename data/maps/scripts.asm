@@ -7,6 +7,8 @@ INCLUDE "maps/Route1.asm"
 
 SECTION "Map Scripts 2", ROMX
 
+INCLUDE "maps/LumioseCityNorth.asm"
+INCLUDE "maps/LumioseCitySouth.asm"
 ; INCLUDE "maps/Route15.asm"
 ; INCLUDE "maps/Route9.asm"
 ; INCLUDE "maps/Route2.asm"

@@ -8,6 +8,12 @@ PlayersHouse1F_Blocks:
 	
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
+
+LumioseCitySouth_Blocks:
+	INCBIN "maps/LumioseCitySouth.blk"
+	
+LumioseCityNorth_Blocks:
+	INCBIN "maps/LumioseCityNorth.blk"
 	
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
@@ -39,20 +45,20 @@ Route8_Blocks:
 Route13_Blocks:
 	INCBIN "maps/Route13.blk"
 
-Route21_Blocks:
-	INCBIN "maps/Route21.blk"
+; Route21_Blocks:
+	; INCBIN "maps/Route21.blk"
 
-Route17_Blocks:
-	INCBIN "maps/Route17.blk"
+; Route17_Blocks:
+	; INCBIN "maps/Route17.blk"
 
-Route5_Blocks:
-	INCBIN "maps/Route5.blk"
+; Route5_Blocks:
+	; INCBIN "maps/Route5.blk"
 
-Route9_Blocks:
-	INCBIN "maps/Route9.blk"
+; Route9_Blocks:
+	; INCBIN "maps/Route9.blk"
 
-Route22_Blocks:
-	INCBIN "maps/Route22.blk"
+; Route22_Blocks:
+	; INCBIN "maps/Route22.blk"
 
 
 SECTION "Map Blocks 2", ROMX

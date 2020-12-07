@@ -105,3 +105,9 @@ ENDM
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
 	map_attributes Route1, ROUTE_1, $05, SOUTH
 	connection south, VanivilleTown, VANIVILLE_TOWN, -2
+	map_attributes LumioseCitySouth, LUMIOSE_CITY_SOUTH, $05, WEST | EAST
+	connection west, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0
+	connection east, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0
+	map_attributes LumioseCityNorth, LUMIOSE_CITY_NORTH, $05, WEST | EAST
+	connection west, LumioseCitySouth, LUMIOSE_CITY_SOUTH, 0
+	connection east, LumioseCitySouth, LUMIOSE_CITY_SOUTH, 0

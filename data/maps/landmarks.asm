@@ -15,6 +15,7 @@ Landmarks:
 	landmark 100,  92, Route3Name
 	landmark 100,  84, SantaluneCityName
 	landmark  84,  92, Route4Name
+	landmark  84,  92, LumioseCityName
 ; non-kalos landmarks
 	landmark  52, 108, PalletTownName
 	landmark  52,  60, NationalParkName
