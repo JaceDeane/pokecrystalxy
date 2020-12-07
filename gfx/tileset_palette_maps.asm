@@ -8,11 +8,11 @@ rept (_NARG - 1) / 2
 endr
 ENDM
 
-TilesetKalosPalMap:
-INCLUDE "gfx/tilesets/kalos_palette_map.asm"
-
 TilesetKantoPalMap:
 INCLUDE "gfx/tilesets/kanto_palette_map.asm"
+
+TilesetKalosPalMap:
+INCLUDE "gfx/tilesets/kalos_palette_map.asm"
 
 Tileset0PalMap:
 TilesetJohtoPalMap:

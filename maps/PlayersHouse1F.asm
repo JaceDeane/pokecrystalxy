@@ -150,36 +150,12 @@ MomScript:
 	closetext
 	end
 
-NeighborScript:
+FletchlingScript:
 	faceplayer
 	opentext
-	checktime MORN
-	iftrue .MornScript
-	checktime DAY
-	iftrue .DayScript
-	checktime NITE
-	iftrue .NiteScript
-
-.MornScript:
-	writetext NeighborMornIntroText
-	promptbutton
-	sjump .Main
-
-.DayScript:
-	writetext NeighborDayIntroText
-	promptbutton
-	sjump .Main
-
-.NiteScript:
-	writetext NeighborNiteIntroText
-	promptbutton
-	sjump .Main
-
-.Main:
-	writetext NeighborText
+	writetext FletchlingText
 	waitbutton
 	closetext
-	turnobject PLAYERSHOUSE1F_POKEFAN_F, RIGHT
 	end
 
 PlayersHouse1FTVScript:
@@ -317,38 +293,54 @@ ImBehindYouText:
 	para "I'm behind you all"
 	line "the way!"
 	done
+	
+MomText1:
+	text "My motto is go"
+	line "for broke!"
 
-NeighborMornIntroText:
-	text "Good morning,"
-	line "<PLAY_G>!"
+	para "It means to risk"
+	line "everything and try"
+	cont "as hard as poss-"
+	cont "ible!"
+	done
+	
+MomText2:
+	text "The connection"
+	line "that I feel with"
+	
+	para "my RHYHORN during"
+	line "a race…"
 
-	para "I'm visiting!"
+	para "I want you to feel"
+	line "that kind of clo-"
+	line "seness with your"
+	cont "#MON as well."
+	done
+	
+MomText3:
+	text "A memory from when"
+	line "I was a RHYHORN"
+	cont "Racer?"
+
+	para "There was a time"
+	line "that I couldn't"
+	
+	para "stop at the finish"
+	line "line."
+	
+	para "Your DAD was wait-"
+	line "ing there, and I"
+	cont "sent him flying…"
+	done
+	
+MomText4:
+	text "All right! You and"
+	line "your #MON look"
+	cont "raring to go!"
 	done
 
-NeighborDayIntroText:
-	text "Hello, <PLAY_G>!"
-	line "I'm visiting!"
-	done
-
-NeighborNiteIntroText:
-	text "Good evening,"
-	line "<PLAY_G>!"
-
-	para "I'm visiting!"
-	done
-
-NeighborText:
-	text "<PLAY_G>, have you"
-	line "heard?"
-
-	para "My daughter is"
-	line "adamant about"
-
-	para "becoming PROF."
-	line "ELM's assistant."
-
-	para "She really loves"
-	line "#MON!"
+FletchlingText:
+	text "Cheerp cheerp!"
 	done
 
 PlayersHouse1FStoveText:
@@ -373,14 +365,15 @@ PlayersHouse1FFridgeText:
 	done
 
 PlayersHouse1FTVText:
-	text "There's a movie on"
-	line "TV: Stars dot the"
+	text "It's a documentary"
+	line "about a RHYHORN"
 
-	para "sky as two boys"
-	line "ride on a train…"
+	para "that overcame an"
+	line "injury to take on"
 
-	para "I'd better get"
-	line "rolling too!"
+	para "a big race and the"
+	line "girl who struggled"
+	cont "alongside it."
 	done
 
 PlayersHouse1F_MapEvents:
@@ -402,8 +395,8 @@ PlayersHouse1F_MapEvents:
 	bg_event  4,  1, BGEVENT_READ, PlayersHouse1FTVScript
 
 	def_object_events
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
-	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  4,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NeighborScript, EVENT_PLAYERS_HOUSE_1F_NEIGHBOR
+	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
+	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  4,  4, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FletchlingScript, EVENT_PLAYERS_HOUSE_1F_NEIGHBOR

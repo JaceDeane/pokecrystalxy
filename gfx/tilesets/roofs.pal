@@ -2,9 +2,9 @@
 	RGB 21,21,21, 11,11,11 ; morn/day
 	RGB 21,21,21, 11,11,11 ; nite
 
-; group 1 (Olivine)
-	RGB 14,17,31, 07,11,15 ; morn/day
-	RGB 09,09,17, 05,07,13 ; nite
+; group 8 (Azalea - Vaniville)
+	RGB 22,20,10, 17,14,03 ; morn/day
+	RGB 11,11,05, 10,09,07 ; nite
 
 ; group 2 (Mahogany)
 	RGB 12,19,00, 06,10,00 ; morn/day
@@ -30,9 +30,9 @@
 	RGB 17,27,31, 05,15,31 ; morn/day
 	RGB 07,08,22, 07,07,16 ; nite
 
-; group 8 (Azalea)
-	RGB 22,20,10, 17,14,03 ; morn/day
-	RGB 11,11,05, 10,09,07 ; nite
+; group 8 (Olivine)
+	RGB 14,17,31, 07,11,15 ; morn/day
+	RGB 09,09,17, 05,07,13 ; nite
 
 ; group 9 (Lake of Rage)
 	RGB 31,08,04, 09,09,08 ; morn/day

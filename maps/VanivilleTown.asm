@@ -1,7 +1,7 @@
 	object_const_def
 	const VANIVILLETOWN_TEACHER
 	const VANIVILLETOWN_FISHER
-	const VANIVILLETOWN_SILVER
+	const VANIVILLETOWN_BOY
 
 VanivilleTown_MapScripts:
 	def_scene_scripts
@@ -101,29 +101,11 @@ VanivilleTownTeacherScript:
 	closetext
 	end
 
-VanivilleTownFisherScript:
-	jumptextfaceplayer Text_ElmDiscoveredNewMon
+VanivilleTownHikerScript:
+	jumptextfaceplayer Text_ScienceIsAmazing
 
-VanivilleTownSilverScript:
-	opentext
-	writetext VanivilleTownRivalText1
-	waitbutton
-	closetext
-	turnobject VANIVILLETOWN_SILVER, LEFT
-	opentext
-	writetext VanivilleTownRivalText2
-	waitbutton
-	closetext
-	follow PLAYER, VANIVILLETOWN_SILVER
-	applymovement PLAYER, VanivilleTown_SilverPushesYouAwayMovement
-	stopfollow
-	pause 5
-	turnobject VANIVILLETOWN_SILVER, DOWN
-	pause 5
-	playsound SFX_TACKLE
-	applymovement PLAYER, VanivilleTown_SilverShovesYouOutMovement
-	applymovement VANIVILLETOWN_SILVER, VanivilleTown_SilverReturnsToTheShadowsMovement
-	end
+VanivilleTownBoyScript:
+	jumptextfaceplayer Text_LotsOfCoolTowns
 
 VanivilleTownSign:
 	jumptext VanivilleTownSignText
@@ -170,22 +152,6 @@ VanivilleTown_TeacherBringsYouBackMovement2:
 	turn_head LEFT
 	step_end
 
-VanivilleTown_SilverPushesYouAwayMovement:
-	turn_head UP
-	step DOWN
-	step_end
-
-VanivilleTown_SilverShovesYouOutMovement:
-	turn_head UP
-	fix_facing
-	jump_step DOWN
-	remove_fixed_facing
-	step_end
-
-VanivilleTown_SilverReturnsToTheShadowsMovement:
-	step RIGHT
-	step_end
-
 Text_GearIsImpressive:
 	text "Wow, your #GEAR"
 	line "is impressive!"
@@ -216,9 +182,9 @@ Text_ItsDangerousToGoAlone:
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Your #MON"
-	line "is adorable!"
-	cont "I wish I had one!"
+	text "Is that a #MON?"
+	line "I wish I had"
+	cont "a #MON!"
 	done
 
 Text_TellMomIfLeaving:
@@ -238,33 +204,37 @@ Text_CallMomOnGear:
 	line "you're doing."
 	done
 
-Text_ElmDiscoveredNewMon:
-	text "Yo, <PLAYER>!"
+Text_ScienceIsAmazing:
+	text "Science is"
+	line "amazing!"
 
-	para "I hear PROF.ELM"
-	line "discovered some"
-	cont "new #MON."
+	para "Using comm. tech.,"
+	line "you can play with"
+	
+	para "other players all"
+	line "over the world!"
 	done
 
-VanivilleTownRivalText1:
-	text "<……>"
+Text_LotsOfCoolTowns:
+	text "VANIVILLE TOWN is"
+	line "pretty nice,"
+	cont "right?"
 
-	para "So this is the"
-	line "famous ELM #MON"
-	cont "LAB…"
-	done
-
-VanivilleTownRivalText2:
-	text "…What are you"
-	line "staring at?"
+	para "The KALOS Region"
+	line "has lots of cool"
+	cont "towns!"
+	
+	para "I want to see"
+	line "them all when I"
+	cont "get big!"
 	done
 
 VanivilleTownSignText:
-	text "NEW BARK TOWN"
+	text "VANIVILLE TOWN"
 
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Beginning Blow"
+	para "A Town Whose"
+	line "Flower Is About"
+	cont "to Bloom"
 	done
 
 VanivilleTownPlayersHouseSignText:
@@ -272,11 +242,11 @@ VanivilleTownPlayersHouseSignText:
 	done
 
 VanivilleTownElmsLabSignText:
-	text "ELM #MON LAB"
+	text "<RIVAL>'s House"
 	done
 
 VanivilleTownElmsHouseSignText:
-	text "ELM'S HOUSE"
+	text "TIERNO's House"
 	done
 
 VanivilleTown_MapEvents:
@@ -298,6 +268,6 @@ VanivilleTown_MapEvents:
 	bg_event  0, 10, BGEVENT_READ, VanivilleTownElmsHouseSign
 
 	def_object_events
-	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
-	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownFisherScript, -1
-	object_event  3,  6, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
+	object_event 13, 10, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
+	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownHikerScript, -1
+	object_event  2,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, EVENT_RIVAL_NEW_BARK_TOWN

@@ -2,6 +2,12 @@ SECTION "Map Blocks 1", ROMX
 
 VanivilleTown_Blocks:
 	INCBIN "maps/VanivilleTown.blk"
+
+PlayersHouse1F_Blocks:
+	INCBIN "maps/PlayersHouse1F.blk"
+	
+Route1_Blocks:
+	INCBIN "maps/Route1.blk"
 	
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
@@ -38,12 +44,6 @@ Route21_Blocks:
 
 Route17_Blocks:
 	INCBIN "maps/Route17.blk"
-
-PlayersHouse1F_Blocks:
-	INCBIN "maps/PlayersHouse1F.blk"
-
-Route1_Blocks:
-	INCBIN "maps/Route1.blk"
 
 Route5_Blocks:
 	INCBIN "maps/Route5.blk"
