@@ -1524,23 +1524,21 @@ _MayRegisterItemText::
 	done
 
 _OakText1::
-	text "Hello! Sorry to"
-	line "keep you waiting!"
-
-	para "Welcome to the"
+	text "Welcome to the"
 	line "world of #MON!"
 
-	para "My name is OAK."
+	para "I am AUGUSTINE"
+	line "SYCAMORE, the"
 
-	para "People call me the"
-	line "#MON PROF."
+	para "KALOS Region's very"
+	line "own #MON PROF."
 	prompt
 
 _OakText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#MON.@"
+	text "This world of ours"
+	line "is widely inhab-"
+	cont "ited by creatures"
+	cont "known as #MON!@"
 	text_end
 
 _OakText3::
@@ -1550,26 +1548,33 @@ _OakText3::
 	text_end ; unreferenced
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
-
-	para "supporting each"
-	line "other."
-
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	text "These mysterious"
+	line "creatures can be"
+	cont "found in every co-"
+	cont "rner of our world…"
+	
+	para "Some run across"
+	line "the plains, others"
+	cont "fly through the"
+	cont "skies, and others"
+	cont "yet swim deep"
+	cont "in the oceans…"
 	prompt
 
 _OakText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#MON yet."
-
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
-
-	para "That's why I study"
-	line "#MON every day."
+	text "We live together"
+	line "with #MON, and"
+	
+	para "lend our strength"
+	line "to one another to"
+	cont "live and prosper."
+	prompt
+	
+_OakText5_2::
+	text "Let's get started"
+	line "with some quick"
+	cont "questions…"
+	
+	para "Are you a boy?"
+	line "Or are you a girl?"
 	prompt

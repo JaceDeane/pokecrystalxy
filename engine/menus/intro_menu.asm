@@ -67,7 +67,7 @@ NewGame:
 	call OakSpeech
 	call InitializeWorld
 
-	;ld a, LANDMARK_NEW_BARK_TOWN
+	ld a, LANDMARK_VANIVILLE_TOWN
 	ld [wPrevLandmark], a
 
 	ld a, SPAWN_HOME
@@ -384,7 +384,7 @@ Continue:
 	ret
 
 .SpawnAfterE4:
-	;ld a, SPAWN_NEW_BARK
+	ld a, SPAWN_VANIVILLE
 	ld [wDefaultSpawnpoint], a
 	call PostCreditsSpawn
 	jp FinishContinueFunction
@@ -692,6 +692,8 @@ OakSpeech:
 
 	ld hl, OakText5
 	call PrintText
+	;ld hl, OakText5_2
+	;call PrintText
 	call RotateThreePalettesRight
 	call ClearTilemap
 

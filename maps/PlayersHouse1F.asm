@@ -3,7 +3,7 @@
 	const PLAYERSHOUSE1F_MOM2
 	const PLAYERSHOUSE1F_MOM3
 	const PLAYERSHOUSE1F_MOM4
-	const PLAYERSHOUSE1F_POKEFAN_F
+	const PLAYERSHOUSE1F_FLETCHLING
 
 PlayersHouse1F_MapScripts:
 	def_scene_scripts
@@ -40,12 +40,12 @@ MeetMomScript:
 	scall PlayersHouse1FReceiveItemStd
 	setflag ENGINE_POKEGEAR
 	setflag ENGINE_PHONE_CARD
-	addcellnum PHONE_MOM
+	;addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
-	writetext MomGivesPokegearText
-	promptbutton
+	;writetext MomGivesPokegearText
+	;promptbutton
 	special SetDayOfWeek
 .SetDayOfWeek:
 	writetext IsItDSTText
@@ -54,7 +54,8 @@ MeetMomScript:
 	special InitialSetDSTFlag
 	yesorno
 	iffalse .SetDayOfWeek
-	sjump .DayOfWeekDone
+	;sjump .DayOfWeekDone
+	sjump .FinishPhone
 
 .WrongDay:
 	special InitialClearDSTFlag
@@ -77,8 +78,8 @@ MeetMomScript:
 	sjump .FinishPhone
 
 .FinishPhone:
-	writetext InstructionsNextText
-	waitbutton
+	;writetext InstructionsNextText
+	;waitbutton
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue .FromRight
@@ -154,6 +155,7 @@ FletchlingScript:
 	faceplayer
 	opentext
 	writetext FletchlingText
+	cry PIDGEY
 	waitbutton
 	closetext
 	end
@@ -187,21 +189,21 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	;text "Morning <PLAYER>!" ;needs to be time dependent
+	text "You sure slept"
+	line "well! All rested"
+	cont "up from the move?"
 
-	para "ELM, was looking"
-	line "for you."
+	para "It's about time"
+	line "you got going!"
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "Why don't you step"
+	line "out and say hello"
+	cont "to the neighbours?"
 
-	para "Oh! I almost for-"
-	line "got! Your #MON"
-
-	para "GEAR is back from"
-	line "the repair shop."
+	para "Oh! Your #MON"
+	line "GEAR is back from"
+	cont "the repair shop."
 
 	para "Here you go!"
 	done
@@ -340,7 +342,8 @@ MomText4:
 	done
 
 FletchlingText:
-	text "Cheerp cheerp!"
+	text "FLETCHLING: Cheerp"
+	line "cheerp!"
 	done
 
 PlayersHouse1FStoveText:
@@ -399,4 +402,4 @@ PlayersHouse1F_MapEvents:
 	object_event  2,  2, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  7,  4, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  0,  2, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  4,  4, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FletchlingScript, -1
+	;object_event  4,  4, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FletchlingScript, -1 ;can't uncomment without glitching the player and itself

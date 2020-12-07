@@ -476,14 +476,13 @@ SwinubBackpic:       INCBIN "gfx/pokemon/swinub/back.2bpp.lz"
 SECTION "Pics 15", ROMX
 
 MewtwoBackpic:       INCBIN "gfx/pokemon/mewtwo/back.2bpp.lz"
-PokemonProfPic:      INCBIN "gfx/trainers/oak.2bpp.lz"
+PokemonProfPic:      INCBIN "gfx/trainers/sycamore.2bpp.lz"
 CalPic:              INCBIN "gfx/trainers/cal.2bpp.lz"
 SwimmerfPic:         INCBIN "gfx/trainers/swimmer_f.2bpp.lz"
 DiglettFrontpic:     INCBIN "gfx/pokemon/diglett/front.animated.2bpp.lz"
 OfficerPic:          INCBIN "gfx/trainers/officer.2bpp.lz"
 MukBackpic:          INCBIN "gfx/pokemon/muk/back.2bpp.lz"
 DelibirdBackpic:     INCBIN "gfx/pokemon/delibird/back.2bpp.lz"
-SabrinaPic:          INCBIN "gfx/trainers/sabrina.2bpp.lz"
 MagikarpBackpic:     INCBIN "gfx/pokemon/magikarp/back.2bpp.lz"
 AriadosBackpic:      INCBIN "gfx/pokemon/ariados/back.2bpp.lz"
 SneaselBackpic:      INCBIN "gfx/pokemon/sneasel/back.2bpp.lz"
@@ -713,6 +712,8 @@ UnownRBackpic:       INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
 
 
 SECTION "Pics 19", ROMX
+
+SabrinaPic:          INCBIN "gfx/trainers/sabrina.2bpp.lz"
 
 ; Seems to be an accidental copy of the previous bank
 

@@ -1,28 +1,33 @@
 _OakText6::
-	text "Now, what did you"
-	line "say your name was?"
+	text "Oho, I see."
+	line "Would you tell me"
+	cont "your name?"
 	prompt
 
 _OakText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	;double check choice
+	;para "So it's <PLAYER>, then? Did I get that right?"
+	text "<PLAYER>…"
+	line "Tres bien! What" ;accented reverse é for "Tres bien"
+	cont "a fantastic name!"
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
+	para "<PLAYER>! Your adv-"
+	line "enture begins now!"
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "You are about to"
+	line "enter the beaut-"
+	cont "iful KALOS Region!"
 
-	para "A world of dreams"
-	line "and adventures"
+	para "Go and meet"
+	line "many #MON and"
+	
+	para "people, and fill"
+	line "your life with"
+	cont "rich experiences!"
 
-	para "with #MON"
-	line "awaits! Let's go!"
-
-	para "I'll be seeing you"
-	line "later!"
+	para "Now, let's go"
+	line "visit the world of"
+	cont "#MON!"
 	done
 
 _ClockTimeMayBeWrongText::
