@@ -18,7 +18,7 @@ VanivilleTown_MapScripts:
 	end
 
 .FlyPoint:
-	;setflag ENGINE_FLYPOINT_VANIVILLE
+	setflag ENGINE_FLYPOINT_VANIVILLE
 	clearevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 	endcallback
 

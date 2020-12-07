@@ -3,9 +3,9 @@
 
 OutdoorSprites:
 ; entries correspond to map groups
-	dw OlivineGroupSprites
+	dw VanivilleGroupSprites
 
-OlivineGroupSprites:
+VanivilleGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY
 	db SPRITE_FAMICOM

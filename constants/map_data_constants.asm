@@ -71,7 +71,7 @@ NUM_MAP_PALETTES EQU const_value
 	const SPAWN_HOME
 	const SPAWN_DEBUG
 ; kalos
-	;const SPAWN_VANIVILLE
+	const SPAWN_VANIVILLE
 	;const SPAWN_FAST_SHIP
 NUM_SPAWNS EQU const_value
 
@@ -79,7 +79,7 @@ NUM_SPAWNS EQU const_value
 	const_def
 ; johto
 KALOS_FLYPOINT EQU const_value
-	;const FLY_VANIVILLE
+	const FLY_VANIVILLE
 ; kanto
 KANTO_FLYPOINT EQU const_value
 	;const FLY_PALLET
