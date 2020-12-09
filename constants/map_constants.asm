@@ -38,8 +38,17 @@ ENDM
 
 	newgroup                                                      ;  2
 	
+	map_const AQUACORDE_TOWN,                              10,  9 ;  1
+	;map_const AQUACORDE_INN,                               10,  9 ;  2
+	;map_const AQUACORDE_BALLSHOP,                          10,  9 ;  3
+	;map_const AQUACORDE_POTIONSHOP,                        10,  9 ;  4
+	map_const ROUTE_2,                                     10, 18 ;  5
+	
+	newgroup                                                      ;  3
+	
 	map_const LUMIOSE_CITY_SOUTH,                          40,  9 ;  1
 	map_const LUMIOSE_CITY_NORTH,                          52,  9 ;  2
+	
 	; map_const NATIONAL_PARK,                               20, 27 ;  
 	; map_const VICTORY_ROAD,                                10, 36 ;  
 	; map_const ROUTE_19,                                    10, 18 ;  5

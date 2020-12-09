@@ -4,6 +4,8 @@ INCLUDE "maps/VanivilleTown.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
 INCLUDE "maps/Route1.asm"
+INCLUDE "maps/AquacordeTown.asm"
+INCLUDE "maps/Route2.asm"
 
 SECTION "Map Scripts 2", ROMX
 
@@ -11,7 +13,6 @@ INCLUDE "maps/LumioseCityNorth.asm"
 INCLUDE "maps/LumioseCitySouth.asm"
 ; INCLUDE "maps/Route15.asm"
 ; INCLUDE "maps/Route9.asm"
-; INCLUDE "maps/Route2.asm"
 ; INCLUDE "maps/Route21.asm"
 ; INCLUDE "maps/Route20.asm"
 ; INCLUDE "maps/Route18.asm"

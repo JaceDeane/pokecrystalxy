@@ -43,7 +43,7 @@
 	tilecoll HEADBUTT_TREE, HEADBUTT_TREE, WALL, WALL ; 2a
 	tilecoll WALL, WALL, WALL, WALL ; 2b
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 2c
-	tilecoll WALL, WALL, WALL, DOOR ; 2d
+	tilecoll WARP_CARPET_UP, WARP_CARPET_UP, FLOOR, FLOOR ; 2d
 	tilecoll WALL, WALL, WALL, DOOR ; 2e
 	tilecoll WALL, WALL, WALL, WALL ; 2f
 	tilecoll BUOY, BUOY, BUOY, WATER ; 30

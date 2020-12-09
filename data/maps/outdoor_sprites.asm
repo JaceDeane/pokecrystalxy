@@ -4,8 +4,10 @@
 OutdoorSprites:
 ; entries correspond to map groups
 	dw VanivilleGroupSprites
+	dw AquacordeGroupSprites
 	dw LumioseGroupSprites
 
+AquacordeGroupSprites:
 VanivilleGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

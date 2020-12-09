@@ -103,8 +103,14 @@ ENDM
 	connection north, Route1, ROUTE_1, 2
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
-	map_attributes Route1, ROUTE_1, $05, SOUTH
+	map_attributes Route1, ROUTE_1, $05, NORTH | SOUTH
+	connection north, AquacordeTown, AQUACORDE_TOWN, -3
 	connection south, VanivilleTown, VANIVILLE_TOWN, -2
+	map_attributes AquacordeTown, AQUACORDE_TOWN, $05, NORTH | SOUTH
+	connection north, Route2, ROUTE_2, 0
+	connection south, Route1, ROUTE_1, 3
+	map_attributes Route2, ROUTE_2, $05, SOUTH
+	connection south, AquacordeTown, AQUACORDE_TOWN, 0
 	map_attributes LumioseCitySouth, LUMIOSE_CITY_SOUTH, $05, WEST | EAST
 	connection west, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0
 	connection east, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0

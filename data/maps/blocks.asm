@@ -8,42 +8,47 @@ PlayersHouse1F_Blocks:
 	
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
+	
+AquacordeTown_Blocks:
+	INCBIN "maps/AquacordeTown.blk"
+
+Route2_Blocks:
+	INCBIN "maps/Route2.blk"
+
+; breaker
 
 LumioseCitySouth_Blocks:
 	INCBIN "maps/LumioseCitySouth.blk"
 	
 LumioseCityNorth_Blocks:
 	INCBIN "maps/LumioseCityNorth.blk"
-	
-Route2_Blocks:
-	INCBIN "maps/Route2.blk"
 
-Route11_Blocks:
-	INCBIN "maps/Route11.blk"
+; Route11_Blocks:
+	; INCBIN "maps/Route11.blk"
 
-Route15_Blocks:
-	INCBIN "maps/Route15.blk"
+; Route15_Blocks:
+	; INCBIN "maps/Route15.blk"
 
-Route19_Blocks:
-	INCBIN "maps/Route19.blk"
+; Route19_Blocks:
+	; INCBIN "maps/Route19.blk"
 
-Route3_Blocks:
-	INCBIN "maps/Route3.blk"
+; Route3_Blocks:
+	; INCBIN "maps/Route3.blk"
 
-Route12_Blocks:
-	INCBIN "maps/Route12.blk"
+; Route12_Blocks:
+	; INCBIN "maps/Route12.blk"
 
-Route20_Blocks:
-	INCBIN "maps/Route20.blk"
+; Route20_Blocks:
+	; INCBIN "maps/Route20.blk"
 
-Route4_Blocks:
-	INCBIN "maps/Route4.blk"
+; Route4_Blocks:
+	; INCBIN "maps/Route4.blk"
 
-Route8_Blocks:
-	INCBIN "maps/Route8.blk"
+; Route8_Blocks:
+	; INCBIN "maps/Route8.blk"
 
-Route13_Blocks:
-	INCBIN "maps/Route13.blk"
+; Route13_Blocks:
+	; INCBIN "maps/Route13.blk"
 
 ; Route21_Blocks:
 	; INCBIN "maps/Route21.blk"
