@@ -86,17 +86,6 @@ INCBIN "data/tilesets/mansion_metatiles.bin"
 TilesetMansionColl::
 INCLUDE "data/tilesets/mansion_collision.asm"
 
-TilesetCaveGFX::
-INCBIN "gfx/tilesets/cave.2bpp.lz"
-
-TilesetCaveMeta::
-TilesetDarkCaveMeta::
-INCBIN "data/tilesets/cave_metatiles.bin"
-
-TilesetCaveColl::
-TilesetDarkCaveColl::
-INCLUDE "data/tilesets/cave_collision.asm"
-
 
 SECTION "Tileset Data 3", ROMX
 
@@ -346,3 +335,14 @@ INCBIN "data/tilesets/kanto_metatiles.bin"
 
 TilesetKantoColl::
 INCLUDE "data/tilesets/kanto_collision.asm"
+
+TilesetCaveGFX::
+INCBIN "gfx/tilesets/cave.2bpp.lz"
+
+TilesetCaveMeta::
+TilesetDarkCaveMeta::
+INCBIN "data/tilesets/cave_metatiles.bin"
+
+TilesetCaveColl::
+TilesetDarkCaveColl::
+INCLUDE "data/tilesets/cave_collision.asm"

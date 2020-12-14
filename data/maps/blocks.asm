@@ -5,16 +5,28 @@ VanivilleTown_Blocks:
 
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
-	
+
+RivalsHouse1F_Blocks:
+	INCBIN "maps/RivalsHouse1F.blk"
+
+RivalsHouse2F_Blocks:
+	INCBIN "maps/RivalsHouse2F.blk"
+
+TiernosHouse1F_Blocks:
+	INCBIN "maps/TiernosHouse1F.blk"
+
+TiernosHouse2F_Blocks:
+	INCBIN "maps/TiernosHouse2F.blk"
+
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
-	
+
 AquacordeTown_Blocks:
 	INCBIN "maps/AquacordeTown.blk"
 
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
-	
+
 SantaluneForest_Blocks:
 	INCBIN "maps/SantaluneForest.blk"
 

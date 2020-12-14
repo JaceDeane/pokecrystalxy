@@ -140,6 +140,9 @@ SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
 
+SECTION "XY Songs", ROMX
+
+INCLUDE "audio/music/santaluneforest.asm"
 
 SECTION "Sound Effects", ROMX
 

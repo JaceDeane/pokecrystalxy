@@ -106,3 +106,5 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+; new to XY
+	dba Music_SantaluneForest

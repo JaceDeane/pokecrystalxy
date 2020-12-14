@@ -8,15 +8,15 @@
 	const LANDMARK_AQUACORDE_TOWN      ; 03
 	const LANDMARK_ROUTE_2             ; 04
 	const LANDMARK_SANTALUNE_FOREST    ; 05
-	const LANDMARK_ROUTE_3
-	const LANDMARK_SANTALUNE_CITY      ; 06
-	const LANDMARK_ROUTE_22            ; 07
-	const LANDMARK_CHAMBER_OF_EMPTINESS; 08
-	const LANDMARK_ROUTE_4             ; 09
-	const LANDMARK_LUMIOSE_CITY        ; 0a
-	const LANDMARK_ROUTE_5             ; 0b
-	const LANDMARK_CAMPHRIER_TOWN      ; 0c
-	const LANDMARK_ROUTE_6             ; 0d
+	const LANDMARK_ROUTE_3             ; 06
+	const LANDMARK_SANTALUNE_CITY      ; 07
+	const LANDMARK_ROUTE_22            ; 08
+	const LANDMARK_CHAMBER_OF_EMPTINESS; 09
+	const LANDMARK_ROUTE_4             ; 0a
+	const LANDMARK_LUMIOSE_CITY        ; 0b
+	const LANDMARK_ROUTE_5             ; 0c
+	const LANDMARK_CAMPHRIER_TOWN      ; 0d
+	const LANDMARK_ROUTE_6             ; 
 	const LANDMARK_PARFUM_PALACE       ; 0e
 	const LANDMARK_ROUTE_7             ; 0f
 	const LANDMARK_BERRY_FIELDS        ; 10

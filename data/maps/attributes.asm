@@ -103,6 +103,10 @@ ENDM
 	connection north, Route1, ROUTE_1, 2
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
+	map_attributes RivalsHouse1F, RIVALS_HOUSE_1F, $00, 0
+	map_attributes RivalsHouse2F, RIVALS_HOUSE_2F, $00, 0
+	map_attributes TiernosHouse1F, TIERNOS_HOUSE_1F, $00, 0
+	map_attributes TiernosHouse2F, TIERNOS_HOUSE_2F, $00, 0
 	map_attributes Route1, ROUTE_1, $05, NORTH | SOUTH
 	connection north, AquacordeTown, AQUACORDE_TOWN, -3
 	connection south, VanivilleTown, VANIVILLE_TOWN, -2

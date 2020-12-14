@@ -14,6 +14,8 @@ Landmarks:
 	landmark 108,  92, SantaluneForestName
 	landmark 100,  92, Route3Name
 	landmark 100,  84, SantaluneCityName
+	landmark  84,  92, Route22Name
+	landmark  84,  92, ChamberofEmptinessName
 	landmark  84,  92, Route4Name
 	landmark  84,  92, LumioseCityName
 ; non-kalos landmarks
@@ -29,6 +31,7 @@ LumioseCityName:     db "LUMIOSE¯CITY@"
 CamphrierTownName:   db "CAMPHRIER¯TOWN@"
 PokemonLeagueName:   db "#MON¯LEAGUE@"
 SantaluneForestName: db "SANTALUNE¯FOREST@"
+ChamberofEmptinessName: db "CHAMBER OF¯EMPTINESS@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"
@@ -51,6 +54,7 @@ Route18Name:         db "ROUTE 18@"
 Route19Name:         db "ROUTE 19@"
 Route20Name:         db "ROUTE 20@"
 Route21Name:         db "ROUTE 21@"
+Route22Name:         db "ROUTE 22@"
 SpecialMapName:      db "SPECIAL@"
 ; non-kalos landmarks
 LakeOfRageName:      db "LAKE OF¯RAGE@"

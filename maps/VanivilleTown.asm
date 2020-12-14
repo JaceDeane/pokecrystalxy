@@ -254,8 +254,8 @@ VanivilleTown_MapEvents:
 
 	def_warp_events
 	warp_event 11,  5, PLAYERS_HOUSE_1F, 1
-	;warp_event  3, 11, PLAYERS_NEIGHBORS_HOUSE, 1
-	;warp_event 11, 13, ELMS_HOUSE, 1
+	warp_event 15,  5, RIVALS_HOUSE_1F, 1
+	warp_event  1,  5, TIERNOS_HOUSE_1F, 1
 
 	def_coord_events
 	coord_event  1,  8, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene1
@@ -270,4 +270,4 @@ VanivilleTown_MapEvents:
 	def_object_events
 	object_event 13, 10, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
 	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownHikerScript, -1
-	object_event  2,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, EVENT_RIVAL_NEW_BARK_TOWN
+	object_event  3, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, EVENT_RIVAL_NEW_BARK_TOWN
