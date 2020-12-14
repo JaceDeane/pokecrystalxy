@@ -22,12 +22,12 @@ INCLUDE "mobile/mobile_12.asm"
 
 InitGender:
 	call InitGenderScreen
-	call LoadGenderScreenPal
-	call LoadGenderScreenLightBlueTile
-	call WaitBGMap2
+	;call LoadGenderScreenPal
+	;call LoadGenderScreenLightBlueTile
+	;call WaitBGMap2
 	call SetPalettes
-	ld hl, AreYouABoyOrAreYouAGirlText
-	call PrintText
+	;ld hl, AreYouABoyOrAreYouAGirlText
+	;call PrintText
 	ld hl, .MenuHeader
 	call LoadMenuHeader
 	call WaitBGMap2
@@ -57,14 +57,14 @@ AreYouABoyOrAreYouAGirlText:
 	text_end
 
 InitGenderScreen:
-	ld a, $10
-	ld [wMusicFade], a
-	ld a, LOW(MUSIC_NONE)
-	ld [wMusicFadeID], a
-	ld a, HIGH(MUSIC_NONE)
-	ld [wMusicFadeID + 1], a
-	ld c, 8
-	call DelayFrames
+	;ld a, $10
+	;ld [wMusicFade], a
+	;ld a, LOW(MUSIC_NONE)
+	;ld [wMusicFadeID], a
+	;ld a, HIGH(MUSIC_NONE)
+	;ld [wMusicFadeID + 1], a
+	;ld c, 8
+	;call DelayFrames
 	call ClearBGPalettes
 	call InitCrystalData
 	call LoadFontsExtra

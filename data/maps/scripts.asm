@@ -6,6 +6,7 @@ INCLUDE "maps/PlayersHouse2F.asm"
 INCLUDE "maps/Route1.asm"
 INCLUDE "maps/AquacordeTown.asm"
 INCLUDE "maps/Route2.asm"
+INCLUDE "maps/SantaluneForest.asm"
 
 SECTION "Map Scripts 2", ROMX
 

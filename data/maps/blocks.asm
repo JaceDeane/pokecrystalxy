@@ -14,6 +14,9 @@ AquacordeTown_Blocks:
 
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
+	
+SantaluneForest_Blocks:
+	INCBIN "maps/SantaluneForest.blk"
 
 ; breaker
 

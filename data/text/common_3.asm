@@ -8,7 +8,7 @@ _OakText7::
 	;double check choice
 	;para "So it's <PLAYER>, then? Did I get that right?"
 	text "<PLAYER>…"
-	line "Tres bien! What" ;accented reverse é for "Tres bien"
+	line "Très bien! What" ;accented reverse é for "Tres bien"
 	cont "a fantastic name!"
 
 	para "<PLAYER>! Your adv-"

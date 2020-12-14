@@ -63,7 +63,7 @@ NewGame:
 	ld [wDebugFlags], a
 	call ResetWRAM
 	call NewGame_ClearTilemapEtc
-	call AreYouABoyOrAreYouAGirl
+	;call AreYouABoyOrAreYouAGirl
 	call OakSpeech
 	call InitializeWorld
 
@@ -692,10 +692,14 @@ OakSpeech:
 
 	ld hl, OakText5
 	call PrintText
-	;ld hl, OakText5_2
-	;call PrintText
+	
+	ld hl, OakText5_2
+	call PrintText
+	
 	call RotateThreePalettesRight
 	call ClearTilemap
+	
+	farcall InitGender
 
 	xor a
 	ld [wCurPartySpecies], a
@@ -735,6 +739,10 @@ OakText4:
 
 OakText5:
 	text_far _OakText5
+	text_end
+	
+OakText5_2:
+	text_far _OakText5_2
 	text_end
 
 OakText6:

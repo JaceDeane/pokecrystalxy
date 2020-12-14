@@ -141,6 +141,8 @@ Route2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  8,  2, SANTALUNE_FOREST, 1
+	warp_event  9,  2, SANTALUNE_FOREST, 2
 
 	def_coord_events
 

@@ -111,6 +111,7 @@ ENDM
 	connection south, Route1, ROUTE_1, 3
 	map_attributes Route2, ROUTE_2, $05, SOUTH
 	connection south, AquacordeTown, AQUACORDE_TOWN, 0
+	map_attributes SantaluneForest, SANTALUNE_FOREST, $00, 0
 	map_attributes LumioseCitySouth, LUMIOSE_CITY_SOUTH, $05, WEST | EAST
 	connection west, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0
 	connection east, LumioseCityNorth, LUMIOSE_CITY_NORTH, 0

@@ -55,7 +55,7 @@ TilesetKalosAnim:
 	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
-	;dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 	
@@ -81,6 +81,8 @@ TilesetForestAnim:
 	dw NULL,  ForestTreeLeftAnimation2
 	dw NULL,  ForestTreeRightAnimation2
 	dw NULL,  AnimateFlowerTile
+	dw NULL,  LightSpotAnim
+	dw NULL,  LightSpotAnim2
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  AnimateWaterPalette
 	dw NULL,  StandingTileFrame8
@@ -673,6 +675,49 @@ FlowerTileFrames:
 	INCBIN "gfx/tilesets/flower/dmg_2.2bpp"
 	INCBIN "gfx/tilesets/flower/cgb_2.2bpp"
 
+LightSpotAnim:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %10
+	srl a
+	;inc a
+	;inc a
+	;and %011
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, LightSpotFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $40
+	;ld hl, vTiles2 tile $41
+	jp WriteTile
+	
+LightSpotAnim2:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %10
+	srl a
+	;inc a
+	;inc a
+	;and %011
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, LightSpotFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $41
+	jp WriteTile
+
+LightSpotFrames:
+	INCBIN "gfx/tilesets/lightspot/1.2bpp"
+	INCBIN "gfx/tilesets/lightspot/2.2bpp"
+	
 LavaBubbleAnim1:
 	ld hl, sp+0
 	ld b, h
