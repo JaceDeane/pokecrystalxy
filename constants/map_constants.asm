@@ -41,9 +41,9 @@ ENDM
 	newgroup                                                      ;  2
 	
 	map_const AQUACORDE_TOWN,                              10,  9 ;  1
-	;map_const AQUACORDE_INN,                               10,  9 ;  2
-	;map_const AQUACORDE_BALLSHOP,                          10,  9 ;  3
-	;map_const AQUACORDE_POTIONSHOP,                        10,  9 ;  4
+	map_const AQUACORDE_INN,                                4,  4 ;  2
+	map_const AQUACORDE_BALL_SHOP,                           4,  4 ;  3
+	map_const AQUACORDE_POTION_SHOP,                         4,  4 ;  4
 	map_const ROUTE_2,                                     10, 18 ;  5
 	map_const SANTALUNE_FOREST,                            17, 24 ;  6
 	

@@ -1,5 +1,7 @@
 Marts:
 ; entries correspond to MART_* constants
+	dw MartAquacordeBalls
+	dw MartAquacordePotions
 	dw MartCherrygrove
 	dw MartCherrygroveDex
 	dw MartViolet
@@ -34,6 +36,16 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+
+MartAquacordeBalls:
+	db 1 ; # items
+	db POKE_BALL
+	db -1 ; end
+
+MartAquacordePotions:
+	db 1 ; # items
+	db POTION
+	db -1 ; end
 
 MartCherrygrove:
 	db 4 ; # items

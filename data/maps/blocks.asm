@@ -23,6 +23,13 @@ Route1_Blocks:
 
 AquacordeTown_Blocks:
 	INCBIN "maps/AquacordeTown.blk"
+	
+AquacordeInn_Blocks:
+	INCBIN "maps/AquacordeInn.blk"
+	
+AquacordeBallShop_Blocks:
+AquacordePotionShop_Blocks:
+	INCBIN "maps/AquacordeShop.blk"
 
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"

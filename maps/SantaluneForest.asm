@@ -10,6 +10,9 @@ SantaluneForestSign:
 
 SantaluneForestSignText:
 	text "SANTALUNE FOREST"
+	
+	para "Keep an eye out"
+	line "for dropped items!"
 	done
 
 SantaluneForest_MapEvents:

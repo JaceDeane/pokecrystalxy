@@ -10,6 +10,7 @@ Route1Sign:
 
 Route1SignText:
 	text "ROUTE 1"
+	line "VANIVILLE PATHWAY"
 
 	para "VANIVILLE TOWN -"
 	line "AQUACORDE TOWN"

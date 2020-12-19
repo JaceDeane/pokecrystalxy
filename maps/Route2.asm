@@ -1,7 +1,5 @@
 	object_const_def
-	const ROUTE2_BUG_CATCHER1
-	const ROUTE2_BUG_CATCHER2
-	const ROUTE2_BUG_CATCHER3
+	const ROUTE2_YOUNGSTER1
 	const ROUTE2_POKE_BALL1
 	const ROUTE2_POKE_BALL2
 	const ROUTE2_POKE_BALL3
@@ -12,28 +10,6 @@ Route2_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-
-TrainerBugCatcherRob:
-	trainer BUG_CATCHER, ROB, EVENT_BEAT_BUG_CATCHER_ROB, BugCatcherRobSeenText, BugCatcherRobBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherRobAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerBugCatcherEd:
-	trainer BUG_CATCHER, ED, EVENT_BEAT_BUG_CATCHER_ED, BugCatcherEdSeenText, BugCatcherEdBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherEdAfterBattleText
-	waitbutton
-	closetext
-	end
 
 TrainerBugCatcherDoug:
 	trainer BUG_CATCHER, DOUG, EVENT_BEAT_BUG_CATCHER_DOUG, BugCatcherDougSeenText, BugCatcherDougBeatenText, 0, .Script
@@ -48,6 +24,9 @@ TrainerBugCatcherDoug:
 
 Route2Sign:
 	jumptext Route2SignText
+	
+Route2Sign2:
+	jumptext Route2Sign2Text
 
 Route2DireHit:
 	itemball DIRE_HIT
@@ -76,40 +55,6 @@ Route2HiddenFullRestore:
 Route2HiddenRevive:
 	hiddenitem REVIVE, EVENT_ROUTE_2_HIDDEN_REVIVE
 
-BugCatcherRobSeenText:
-	text "My bug #MON are"
-	line "tough. Prepare to"
-	cont "lose!"
-	done
-
-BugCatcherRobBeatenText:
-	text "I was whipped…"
-	done
-
-BugCatcherRobAfterBattleText:
-	text "I'm going to look"
-	line "for stronger bug"
-	cont "#MON."
-	done
-
-BugCatcherEdSeenText:
-	text "If you walk in"
-	line "tall grass wearing"
-
-	para "shorts, do you get"
-	line "nicks and cuts?"
-	done
-
-BugCatcherEdBeatenText:
-	text "Ouch, ouch, ouch!"
-	done
-
-BugCatcherEdAfterBattleText:
-	text "They'll really"
-	line "sting when you"
-	cont "take a bath."
-	done
-
 BugCatcherDougSeenText:
 	text "Why don't girls"
 	line "like bug #MON?"
@@ -120,14 +65,15 @@ BugCatcherDougBeatenText:
 	done
 
 BugCatcherDougAfterBattleText:
-	text "Bug #MON squish"
-	line "like plush toys"
+	text "Time to get in"
+	line "some practice with"
 
-	para "when you squeeze"
-	line "their bellies."
+	para "the wild #MON"
+	line "in the tall grass!"
 
-	para "I love how they"
-	line "feel!"
+	para "Oh! I'd better heal"
+	line "up my #MON"
+	cont "first!"
 	done
 
 Route2SignText:
@@ -135,6 +81,11 @@ Route2SignText:
 
 	para "AQUACORDE TOWN -"
 	line "SANTALUNE CITY"
+	done
+	
+Route2Sign2Text:
+	text "SANTALUNE FOREST"
+	line "AHEAD"
 	done
 
 Route2_MapEvents:
@@ -148,17 +99,16 @@ Route2_MapEvents:
 
 	def_bg_events
 	bg_event 11, 25, BGEVENT_READ, Route2Sign
-	bg_event 14, 26, BGEVENT_ITEM, Route2HiddenMaxEther
-	bg_event  4, 22, BGEVENT_ITEM, Route2HiddenFullHeal
-	bg_event  4, 27, BGEVENT_ITEM, Route2HiddenFullRestore
-	bg_event 12, 30, BGEVENT_ITEM, Route2HiddenRevive
+	bg_event 11,  5, BGEVENT_READ, Route2Sign2
+	bg_event  3, 20, BGEVENT_ITEM, Route2HiddenMaxEther
+	bg_event  3, 18, BGEVENT_ITEM, Route2HiddenFullHeal
+	bg_event  3, 19, BGEVENT_ITEM, Route2HiddenFullRestore
+	bg_event  3, 21, BGEVENT_ITEM, Route2HiddenRevive
 
 	def_object_events
-	object_event 10, 45, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 5, TrainerBugCatcherRob, -1
-	object_event  8, 14, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherEd, -1
-	object_event  7,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDoug, -1
+	object_event  7,  6, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDoug, -1
 	object_event 15, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2DireHit, EVENT_ROUTE_2_DIRE_HIT
-	object_event 13, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MaxPotion, EVENT_ROUTE_2_MAX_POTION
-	object_event 13,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Carbos, EVENT_ROUTE_2_CARBOS
+	object_event  4, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MaxPotion, EVENT_ROUTE_2_MAX_POTION
+	object_event 13,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Carbos, EVENT_ROUTE_2_CARBOS
 	object_event 14, 50, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Elixer, EVENT_ROUTE_2_ELIXER
-	object_event 13, 14, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route2FruitTree, -1
+	object_event 13, 15, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route2FruitTree, -1
