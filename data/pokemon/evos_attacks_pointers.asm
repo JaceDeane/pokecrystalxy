@@ -152,15 +152,24 @@ EvosAttacksPointers::
 	dw DragoniteEvosAttacks
 	dw MewtwoEvosAttacks
 	dw MewEvosAttacks
-	dw ChikoritaEvosAttacks
-	dw BayleefEvosAttacks
-	dw MeganiumEvosAttacks
-	dw CyndaquilEvosAttacks
-	dw QuilavaEvosAttacks
-	dw TyphlosionEvosAttacks
-	dw TotodileEvosAttacks
-	dw CroconawEvosAttacks
-	dw FeraligatrEvosAttacks
+	; dw ChikoritaEvosAttacks
+	; dw BayleefEvosAttacks
+	; dw MeganiumEvosAttacks
+	; dw CyndaquilEvosAttacks
+	; dw QuilavaEvosAttacks
+	; dw TyphlosionEvosAttacks
+	; dw TotodileEvosAttacks
+	; dw CroconawEvosAttacks
+	; dw FeraligatrEvosAttacks
+	dw ChespinEvosAttacks
+	dw QuilladinEvosAttacks
+	dw ChesnaughtEvosAttacks
+	dw FennekinEvosAttacks
+	dw BraixenEvosAttacks
+	dw DelphoxEvosAttacks
+	dw FroakieEvosAttacks
+	dw FrogadierEvosAttacks
+	dw GreninjaEvosAttacks
 	dw SentretEvosAttacks
 	dw FurretEvosAttacks
 	dw HoothootEvosAttacks
@@ -252,15 +261,6 @@ EvosAttacksPointers::
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
-	; dw ChespinEvosAttacks
-	; dw QuilladinEvosAttacks
-	; dw ChesnaughtEvosAttacks
-	; dw FennekinEvosAttacks
-	; dw BraixenEvosAttacks
-	; dw DelphoxEvosAttacks
-	; dw FroakieEvosAttacks
-	; dw FrogadierEvosAttacks
-	; dw GreninjaEvosAttacks
 	; dw BunnelbyEvosAttacks
 	; dw DiggersbyEvosAttacks
 	; dw FletchlingEvosAttacks

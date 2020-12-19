@@ -31,7 +31,7 @@ ENDM
 	
 	map_const VANIVILLE_TOWN,                              10,  9 ;  1
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
-	map_const PLAYERS_HOUSE_2F,                             4,  3 ; 3  
+	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3  
 	map_const RIVALS_HOUSE_1F,                              4,  4 ;  4
 	map_const RIVALS_HOUSE_2F,                              3,  3 ;  5
 	map_const TIERNOS_HOUSE_1F,                             4,  4 ;  6
@@ -42,8 +42,8 @@ ENDM
 	
 	map_const AQUACORDE_TOWN,                              10,  9 ;  1
 	map_const AQUACORDE_INN,                                4,  4 ;  2
-	map_const AQUACORDE_BALL_SHOP,                           4,  4 ;  3
-	map_const AQUACORDE_POTION_SHOP,                         4,  4 ;  4
+	map_const AQUACORDE_BALL_SHOP,                          4,  4 ;  3
+	map_const AQUACORDE_POTION_SHOP,                        4,  4 ;  4
 	map_const ROUTE_2,                                     10, 18 ;  5
 	map_const SANTALUNE_FOREST,                            17, 24 ;  6
 	

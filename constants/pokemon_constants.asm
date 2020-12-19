@@ -171,15 +171,15 @@
 	const MEWTWO     ; 96
 	const MEW        ; 97
 JOHTO_POKEMON EQU const_value
-	const CHIKORITA  ; 98
-	const BAYLEEF    ; 99
-	const MEGANIUM   ; 9a
-	const CYNDAQUIL  ; 9b
-	const QUILAVA    ; 9c
-	const TYPHLOSION ; 9d
-	const TOTODILE   ; 9e
-	const CROCONAW   ; 9f
-	const FERALIGATR ; a0
+	const CHESPIN    ; 98
+	const QUILLADIN  ; 99
+	const CHESNAUGHT ; 9a
+	const FENNEKIN   ; 9b
+	const BRAIXEN    ; 9c
+	const DELPHOX    ; 9d
+	const FROAKIE    ; 9e
+	const FROGADIER  ; 9f
+	const GRENINJA   ; a0
 	const SENTRET    ; a1
 	const FURRET     ; a2
 	const HOOTHOOT   ; a3
@@ -271,15 +271,6 @@ JOHTO_POKEMON EQU const_value
 	const LUGIA      ; f9
 	const HO_OH      ; fa
 	const CELEBI     ; fb
-	; const CHESPIN    ; 9d
-	; const QUILLADIN  ; 9e
-	; const CHESNAUGHT ; 9f
-	; const FENNEKIN   ; a0
-	; const BRAIXEN    ; a1
-	; const DELPHOX    ; a2
-	; const FROAKIE    ; a3
-	; const FROGADIER  ; a4
-	; const GRENINJA   ; a5
 	; const BUNNELBY   ; a6
 	; const DIGGERSBY  ; a7
 	; const FLETCHLING ; a8

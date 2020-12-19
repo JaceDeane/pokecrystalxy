@@ -2058,139 +2058,295 @@ MewEvosAttacks:
 	db 50, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
-ChikoritaEvosAttacks:
-	db EVOLVE_LEVEL, 16, BAYLEEF
+; ChikoritaEvosAttacks:
+	; db EVOLVE_LEVEL, 16, BAYLEEF
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, GROWL
+	; db 8, RAZOR_LEAF
+	; db 12, REFLECT
+	; db 15, POISONPOWDER
+	; db 22, SYNTHESIS
+	; db 29, BODY_SLAM
+	; db 36, LIGHT_SCREEN
+	; db 43, SAFEGUARD
+	; db 50, SOLARBEAM
+	; db 0 ; no more level-up moves
+
+; BayleefEvosAttacks:
+	; db EVOLVE_LEVEL, 32, MEGANIUM
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, GROWL
+	; db 1, RAZOR_LEAF
+	; db 1, REFLECT
+	; db 8, RAZOR_LEAF
+	; db 12, REFLECT
+	; db 15, POISONPOWDER
+	; db 23, SYNTHESIS
+	; db 31, BODY_SLAM
+	; db 39, LIGHT_SCREEN
+	; db 47, SAFEGUARD
+	; db 55, SOLARBEAM
+	; db 0 ; no more level-up moves
+
+; MeganiumEvosAttacks:
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, GROWL
+	; db 1, RAZOR_LEAF
+	; db 1, REFLECT
+	; db 8, RAZOR_LEAF
+	; db 12, REFLECT
+	; db 15, POISONPOWDER
+	; db 23, SYNTHESIS
+	; db 31, BODY_SLAM
+	; db 41, LIGHT_SCREEN
+	; db 51, SAFEGUARD
+	; db 61, SOLARBEAM
+	; db 0 ; no more level-up moves
+
+; CyndaquilEvosAttacks:
+	; db EVOLVE_LEVEL, 14, QUILAVA
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, LEER
+	; db 6, SMOKESCREEN
+	; db 12, EMBER
+	; db 19, QUICK_ATTACK
+	; db 27, FLAME_WHEEL
+	; db 36, SWIFT
+	; db 46, FLAMETHROWER
+	; db 0 ; no more level-up moves
+
+; QuilavaEvosAttacks:
+	; db EVOLVE_LEVEL, 36, TYPHLOSION
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, LEER
+	; db 1, SMOKESCREEN
+	; db 6, SMOKESCREEN
+	; db 12, EMBER
+	; db 21, QUICK_ATTACK
+	; db 31, FLAME_WHEEL
+	; db 42, SWIFT
+	; db 54, FLAMETHROWER
+	; db 0 ; no more level-up moves
+
+; TyphlosionEvosAttacks:
+	; db 0 ; no more evolutions
+	; db 1, TACKLE
+	; db 1, LEER
+	; db 1, SMOKESCREEN
+	; db 1, EMBER
+	; db 6, SMOKESCREEN
+	; db 12, EMBER
+	; db 21, QUICK_ATTACK
+	; db 31, FLAME_WHEEL
+	; db 45, SWIFT
+	; db 60, FLAMETHROWER
+	; db 0 ; no more level-up moves
+
+; TotodileEvosAttacks:
+	; db EVOLVE_LEVEL, 18, CROCONAW
+	; db 0 ; no more evolutions
+	; db 1, SCRATCH
+	; db 1, LEER
+	; db 7, RAGE
+	; db 13, WATER_GUN
+	; db 20, BITE
+	; db 27, SCARY_FACE
+	; db 35, SLASH
+	; db 43, SCREECH
+	; db 52, HYDRO_PUMP
+	; db 0 ; no more level-up moves
+
+; CroconawEvosAttacks:
+	; db EVOLVE_LEVEL, 30, FERALIGATR
+	; db 0 ; no more evolutions
+	; db 1, SCRATCH
+	; db 1, LEER
+	; db 1, RAGE
+	; db 7, RAGE
+	; db 13, WATER_GUN
+	; db 21, BITE
+	; db 28, SCARY_FACE
+	; db 37, SLASH
+	; db 45, SCREECH
+	; db 55, HYDRO_PUMP
+	; db 0 ; no more level-up moves
+
+; FeraligatrEvosAttacks:
+	; db 0 ; no more evolutions
+	; db 1, SCRATCH
+	; db 1, LEER
+	; db 1, RAGE
+	; db 1, WATER_GUN
+	; db 7, RAGE
+	; db 13, WATER_GUN
+	; db 21, BITE
+	; db 28, SCARY_FACE
+	; db 38, SLASH
+	; db 47, SCREECH
+	; db 58, HYDRO_PUMP
+	; db 0 ; no more level-up moves
+
+ChespinEvosAttacks:
+	db EVOLVE_LEVEL, 16, QUILLADIN
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 22, SYNTHESIS
-	db 29, BODY_SLAM
-	db 36, LIGHT_SCREEN
-	db 43, SAFEGUARD
-	db 50, SOLARBEAM
+	; db 1, GROWL
+	; db 7, VINE_WHIP
+	; db 10, ROLLOUT
+	; db 12, BITE
+	; db 15, LEECH_SEED
+	; db 18, PIN_MISSILE
+	; db 23, TAKE_DOWN
+	; db 27, RAZOR_LEAF
+	; db 30, MUD_SHOT
+	; db 35, BODY_SLAM
+	; db 39, PAIN_SPLIT
+	; db 43, WOOD_HAMMER
 	db 0 ; no more level-up moves
 
-BayleefEvosAttacks:
-	db EVOLVE_LEVEL, 32, MEGANIUM
+QuilladinEvosAttacks:
+	db EVOLVE_LEVEL, 36, CHESNAUGHT
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 39, LIGHT_SCREEN
-	db 47, SAFEGUARD
-	db 55, SOLARBEAM
+	; db 1, GROWL
+	; db 7, VINE_WHIP
+	; db 10, ROLLOUT
+	; db 12, BITE
+	; db 15, LEECH_SEED
+	; db 18, PIN_MISSILE
+	; db 23, TAKE_DOWN
+	; db 30, RAZOR_LEAF
+	; db 33, MUD_SHOT
+	; db 37, BODY_SLAM
+	; db 42, PAIN_SPLIT
+	; db 48, WOOD_HAMMER
 	db 0 ; no more level-up moves
 
-MeganiumEvosAttacks:
+ChesnaughtEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 41, LIGHT_SCREEN
-	db 51, SAFEGUARD
-	db 61, SOLARBEAM
+	; db 1, GROWL
+	; db 7, VINE_WHIP
+	; db 10, ROLLOUT
+	; db 12, BITE
+	; db 15, LEECH_SEED
+	; db 18, PIN_MISSILE
+	; db 23, TAKE_DOWN
+	; db 30, RAZOR_LEAF
+	; db 33, MUD_SHOT
+	; db 36, CROSS_CHOP
+	; db 40, BODY_SLAM
+	; db 45, PAIN_SPLIT
+	; db 52, WOOD_HAMMER
 	db 0 ; no more level-up moves
 
-CyndaquilEvosAttacks:
-	db EVOLVE_LEVEL, 14, QUILAVA
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 19, QUICK_ATTACK
-	db 27, FLAME_WHEEL
-	db 36, SWIFT
-	db 46, FLAMETHROWER
-	db 0 ; no more level-up moves
-
-QuilavaEvosAttacks:
-	db EVOLVE_LEVEL, 36, TYPHLOSION
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 1, SMOKESCREEN
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 42, SWIFT
-	db 54, FLAMETHROWER
-	db 0 ; no more level-up moves
-
-TyphlosionEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 1, SMOKESCREEN
-	db 1, EMBER
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 45, SWIFT
-	db 60, FLAMETHROWER
-	db 0 ; no more level-up moves
-
-TotodileEvosAttacks:
-	db EVOLVE_LEVEL, 18, CROCONAW
+FennekinEvosAttacks:
+	db EVOLVE_LEVEL, 16, BRAIXEN
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, LEER
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 20, BITE
-	db 27, SCARY_FACE
-	db 35, SLASH
-	db 43, SCREECH
-	db 52, HYDRO_PUMP
+	; db 1, TAIL_WHIP
+	; db 7, EMBER
+	; db 14, FIRE_SPIN
+	; db 17, PSYBEAM
+	; db 20, FLAME_WHEEL
+	; db 24, LIGHT_SCREEN
+	; db 27, MIND_READER
+	; db 32, FLAMETHROWER
+	; db 37, PSYCHIC_M
+	; db 40, SUNNY_DAY
+	; db 45, FIRE_BLAST
 	db 0 ; no more level-up moves
 
-CroconawEvosAttacks:
-	db EVOLVE_LEVEL, 30, FERALIGATR
+BraixenEvosAttacks:
+	db EVOLVE_LEVEL, 36, DELPHOX
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, LEER
-	db 1, RAGE
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 37, SLASH
-	db 45, SCREECH
-	db 55, HYDRO_PUMP
+	; db 1, TAIL_WHIP
+	; db 7, EMBER
+	; db 14, FIRE_SPIN
+	; db 18, PSYBEAM
+	; db 22, FLAME_WHEEL
+	; db 27, LIGHT_SCREEN
+	; db 32, MIND_READER
+	; db 36, FLAMETHROWER
+	; db 40, PSYCHIC_M
+	; db 44, SUNNY_DAY
+	; db 49, FIRE_BLAST
 	db 0 ; no more level-up moves
 
-FeraligatrEvosAttacks:
+DelphoxEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, LEER
-	db 1, RAGE
-	db 1, WATER_GUN
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 38, SLASH
-	db 47, SCREECH
-	db 58, HYDRO_PUMP
+	; db 1, TAIL_WHIP
+	; db 7, EMBER
+	; db 14, FIRE_SPIN
+	; db 18, PSYBEAM
+	; db 22, FLAME_WHEEL
+	; db 27, LIGHT_SCREEN
+	; db 32, MIND_READER
+	; db 36, FLAMETHROWER
+	; db 42, PSYCHIC_M
+	; db 47, SUNNY_DAY
+	; db 52, FIRE_BLAST
+	; db 58, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
+FroakieEvosAttacks:
+	db EVOLVE_LEVEL, 16, FROGADIER
+	db 0 ; no more evolutions
+	db 1, POUND
+	; db 1, GROWL
+	; db 7, BUBBLE
+	; db 12, QUICK_ATTACK
+	; db 14, LICK
+	; db 17, WATER_PULSE
+	; db 21, DOUBLE_TEAM
+	; db 25, FAINT_ATTACK
+	; db 28, HAZE
+	; db 33, SUBSTITUTE
+	; db 38, NIGHT_SLASH
+	; db 42, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+FrogadierEvosAttacks:
+	db EVOLVE_LEVEL, 36, GRENINJA
+	db 0 ; no more evolutions
+	db 1, POUND
+	; db 1, GROWL
+	; db 7, BUBBLE
+	; db 12, QUICK_ATTACK
+	; db 14, LICK
+	; db 19, WATER_PULSE
+	; db 24, DOUBLE_TEAM
+	; db 28, FAINT_ATTACK
+	; db 32, HAZE
+	; db 37, SUBSTITUTE
+	; db 41, NIGHT_SLASH
+	; db 47, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+GreninjaEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, POUND
+	; db 1, GROWL
+	; db 7, BUBBLE
+	; db 12, QUICK_ATTACK
+	; db 14, LICK
+	; db 19, WATER_PULSE
+	; db 24, DOUBLE_TEAM
+	; db 28, FAINT_ATTACK
+	; db 32, HAZE
+	; db 36, SPIKES
+	; db 40, SUBSTITUTE
+	; db 44, NIGHT_SLASH
+	; db 50, HYDRO_PUMP
+	db 0 ; no more level-up moves
+	
 SentretEvosAttacks:
 	db EVOLVE_LEVEL, 15, FURRET
 	db 0 ; no more evolutions
@@ -3357,162 +3513,6 @@ CelebiEvosAttacks:
 	db 30, FUTURE_SIGHT
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
-	db 0 ; no more level-up moves
-	
-; ChespinEvosAttacks:
-	; db EVOLVE_LEVEL, 16, QUILLADIN
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 7, VINE_WHIP
-	; db 10, ROLLOUT
-	; db 12, BITE
-	; db 15, LEECH_SEED
-	; db 18, PIN_MISSILE
-	; db 23, TAKE_DOWN
-	; db 27, RAZOR_LEAF
-	; db 30, MUD_SHOT
-	; db 35, BODY_SLAM
-	; db 39, PAIN_SPLIT
-	; db 43, WOOD_HAMMER
-	; db 0 ; no more level-up moves
-
-; QuilladinEvosAttacks:
-	; db EVOLVE_LEVEL, 36, CHESNAUGHT
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 7, VINE_WHIP
-	; db 10, ROLLOUT
-	; db 12, BITE
-	; db 15, LEECH_SEED
-	; db 18, PIN_MISSILE
-	; db 23, TAKE_DOWN
-	; db 30, RAZOR_LEAF
-	; db 33, MUD_SHOT
-	; db 37, BODY_SLAM
-	; db 42, PAIN_SPLIT
-	; db 48, WOOD_HAMMER
-	; db 0 ; no more level-up moves
-
-; ChesnaughtEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 7, VINE_WHIP
-	; db 10, ROLLOUT
-	; db 12, BITE
-	; db 15, LEECH_SEED
-	; db 18, PIN_MISSILE
-	; db 23, TAKE_DOWN
-	; db 30, RAZOR_LEAF
-	; db 33, MUD_SHOT
-	; db 36, CROSS_CHOP
-	; db 40, BODY_SLAM
-	; db 45, PAIN_SPLIT
-	; db 52, WOOD_HAMMER
-	; db 0 ; no more level-up moves
-
-; FennekinEvosAttacks:
-	; db EVOLVE_LEVEL, 16, BRAIXEN
-	; db 0 ; no more evolutions
-	; db 1, SCRATCH
-	; db 1, TAIL_WHIP
-	; db 7, EMBER
-	; db 14, FIRE_SPIN
-	; db 17, PSYBEAM
-	; db 20, FLAME_WHEEL
-	; db 24, LIGHT_SCREEN
-	; db 27, MIND_READER
-	; db 32, FLAMETHROWER
-	; db 37, PSYCHIC_M
-	; db 40, SUNNY_DAY
-	; db 45, FIRE_BLAST
-	; db 0 ; no more level-up moves
-
-; BraixenEvosAttacks:
-	; db EVOLVE_LEVEL, 36, DELPHOX
-	; db 0 ; no more evolutions
-	; db 1, SCRATCH
-	; db 1, TAIL_WHIP
-	; db 7, EMBER
-	; db 14, FIRE_SPIN
-	; db 18, PSYBEAM
-	; db 22, FLAME_WHEEL
-	; db 27, LIGHT_SCREEN
-	; db 32, MIND_READER
-	; db 36, FLAMETHROWER
-	; db 40, PSYCHIC_M
-	; db 44, SUNNY_DAY
-	; db 49, FIRE_BLAST
-	; db 0 ; no more level-up moves
-
-; DelphoxEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, SCRATCH
-	; db 1, TAIL_WHIP
-	; db 7, EMBER
-	; db 14, FIRE_SPIN
-	; db 18, PSYBEAM
-	; db 22, FLAME_WHEEL
-	; db 27, LIGHT_SCREEN
-	; db 32, MIND_READER
-	; db 36, FLAMETHROWER
-	; db 42, PSYCHIC_M
-	; db 47, SUNNY_DAY
-	; db 52, FIRE_BLAST
-	; db 58, FUTURE_SIGHT
-	; db 0 ; no more level-up moves
-
-; FroakieEvosAttacks:
-	; db EVOLVE_LEVEL, 16, FROGADIER
-	; db 0 ; no more evolutions
-	; db 1, POUND
-	; db 1, GROWL
-	; db 7, BUBBLE
-	; db 12, QUICK_ATTACK
-	; db 14, LICK
-	; db 17, WATER_PULSE
-	; db 21, DOUBLE_TEAM
-	; db 25, FAINT_ATTACK
-	; db 28, HAZE
-	; db 33, SUBSTITUTE
-	; db 38, NIGHT_SLASH
-	; db 42, HYDRO_PUMP
-	; db 0 ; no more level-up moves
-
-; FrogadierEvosAttacks:
-	; db EVOLVE_LEVEL, 36, GRENINJA
-	; db 0 ; no more evolutions
-	; db 1, POUND
-	; db 1, GROWL
-	; db 7, BUBBLE
-	; db 12, QUICK_ATTACK
-	; db 14, LICK
-	; db 19, WATER_PULSE
-	; db 24, DOUBLE_TEAM
-	; db 28, FAINT_ATTACK
-	; db 32, HAZE
-	; db 37, SUBSTITUTE
-	; db 41, NIGHT_SLASH
-	; db 47, HYDRO_PUMP
-	; db 0 ; no more level-up moves
-
-; GreninjaEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, POUND
-	; db 1, GROWL
-	; db 7, BUBBLE
-	; db 12, QUICK_ATTACK
-	; db 14, LICK
-	; db 19, WATER_PULSE
-	; db 24, DOUBLE_TEAM
-	; db 28, FAINT_ATTACK
-	; db 32, HAZE
-	; db 36, SPIKES
-	; db 40, SUBSTITUTE
-	; db 44, NIGHT_SLASH
-	; db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 ; BunnelbyEvosAttacks:

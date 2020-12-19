@@ -304,24 +304,42 @@ PokemonPicPointers::
 	dba_pic MewtwoBackpic
 	dba_pic MewFrontpic
 	dba_pic MewBackpic
-	dba_pic ChikoritaFrontpic
-	dba_pic ChikoritaBackpic
-	dba_pic BayleefFrontpic
-	dba_pic BayleefBackpic
-	dba_pic MeganiumFrontpic
-	dba_pic MeganiumBackpic
-	dba_pic CyndaquilFrontpic
-	dba_pic CyndaquilBackpic
-	dba_pic QuilavaFrontpic
-	dba_pic QuilavaBackpic
-	dba_pic TyphlosionFrontpic
-	dba_pic TyphlosionBackpic
-	dba_pic TotodileFrontpic
-	dba_pic TotodileBackpic
-	dba_pic CroconawFrontpic
-	dba_pic CroconawBackpic
-	dba_pic FeraligatrFrontpic
-	dba_pic FeraligatrBackpic
+	; dba_pic ChikoritaFrontpic
+	; dba_pic ChikoritaBackpic
+	; dba_pic BayleefFrontpic
+	; dba_pic BayleefBackpic
+	; dba_pic MeganiumFrontpic
+	; dba_pic MeganiumBackpic
+	; dba_pic CyndaquilFrontpic
+	; dba_pic CyndaquilBackpic
+	; dba_pic QuilavaFrontpic
+	; dba_pic QuilavaBackpic
+	; dba_pic TyphlosionFrontpic
+	; dba_pic TyphlosionBackpic
+	; dba_pic TotodileFrontpic
+	; dba_pic TotodileBackpic
+	; dba_pic CroconawFrontpic
+	; dba_pic CroconawBackpic
+	; dba_pic FeraligatrFrontpic
+	; dba_pic FeraligatrBackpic
+	dba_pic ChespinFrontpic
+	dba_pic ChespinBackpic
+	dba_pic QuilladinFrontpic
+	dba_pic QuilladinBackpic
+	dba_pic ChesnaughtFrontpic
+	dba_pic ChesnaughtBackpic
+	dba_pic FennekinFrontpic
+	dba_pic FennekinBackpic
+	dba_pic BraixenFrontpic
+	dba_pic BraixenBackpic
+	dba_pic DelphoxFrontpic
+	dba_pic DelphoxBackpic
+	dba_pic FroakieFrontpic
+	dba_pic FroakieBackpic
+	dba_pic FrogadierFrontpic
+	dba_pic FrogadierBackpic
+	dba_pic GreninjaFrontpic
+	dba_pic GreninjaBackpic
 	dba_pic SentretFrontpic
 	dba_pic SentretBackpic
 	dba_pic FurretFrontpic
@@ -507,24 +525,6 @@ PokemonPicPointers::
 	dba_pic HoOhBackpic
 	dba_pic CelebiFrontpic
 	dba_pic CelebiBackpic
-	; dba_pic ChespinFrontpic
-	; dba_pic ChespinBackpic
-	; dba_pic QuilladinFrontpic
-	; dba_pic QuilladinBackpic
-	; dba_pic ChesnaughtFrontpic
-	; dba_pic ChesnaughtBackpic
-	; dba_pic FennekinFrontpic
-	; dba_pic FennekinBackpic
-	; dba_pic BraixenFrontpic
-	; dba_pic BraixenBackpic
-	; dba_pic DelphoxFrontpic
-	; dba_pic DelphoxBackpic
-	; dba_pic FroakieFrontpic
-	; dba_pic FroakieBackpic
-	; dba_pic FrogadierFrontpic
-	; dba_pic FrogadierBackpic
-	; dba_pic GreninjaFrontpic
-	; dba_pic GreninjaBackpic
 	; dba_pic BunnelbyFrontpic
 	; dba_pic BunnelbyBackpic
 	; dba_pic DiggersbyFrontpic

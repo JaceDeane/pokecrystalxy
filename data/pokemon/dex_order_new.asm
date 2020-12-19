@@ -1,24 +1,15 @@
 ; Every Pokémon sorted in New Pokédex Order.
 
 NewPokedexOrder:
-	; db CHESPIN
-	; db QUILLADIN
-	; db CHESNAUGHT
-	; db FENNEKIN
-	; db BRAIXEN
-	; db DELPHOX
-	; db FROAKIE
-	; db FROGADIER
-	; db GRENINJA
-	db CHIKORITA
-	db BAYLEEF
-	db MEGANIUM
-	db CYNDAQUIL
-	db QUILAVA
-	db TYPHLOSION
-	db TOTODILE
-	db CROCONAW
-	db FERALIGATR
+	db CHESPIN
+	db QUILLADIN
+	db CHESNAUGHT
+	db FENNEKIN
+	db BRAIXEN
+	db DELPHOX
+	db FROAKIE
+	db FROGADIER
+	db GRENINJA
 	db PIDGEY
 	db PIDGEOTTO
 	db PIDGEOT

@@ -80,6 +80,9 @@ VanivilleTownTeacherScript:
 	iftrue .MonIsAdorable
 	writetext Text_GearIsImpressive
 	waitbutton
+	givepoke CHESPIN, 5, BERRY ; debug
+	givepoke FENNEKIN, 5, BERRY ; debug
+	givepoke FROAKIE, 5, BERRY ; debug
 	closetext
 	end
 
