@@ -121,7 +121,7 @@ PlayersHouse2F_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  0,  4, BGEVENT_UP, PlayersHousePCScript
+	bg_event  0,  4, BGEVENT_LEFT, PlayersHousePCScript
 	bg_event  3,  1, BGEVENT_READ, PlayersHouseRadioScript
 	bg_event  7,  1, BGEVENT_READ, PlayersHouseBookshelfScript
 	bg_event  5,  0, BGEVENT_IFSET, PosterScript

@@ -8,16 +8,18 @@ AquacordeInn_MapScripts:
 
 AquacordeInnLady:
 	opentext
-	sjump .CanHeal
-	;checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	;iftrue .CanHeal
-	;writetext AquacordeInnLadyText1
-	;waitbutton
-	;closetext
+	;sjump .CanHeal
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .CanHeal
+	writetext AquacordeInnLadyText2
+	promptbutton
+	writetext AquacordeInnLadyText3
+	waitbutton
+	closetext
 	end
 
 .CanHeal:
-	writetext AquacordeInnLadyText2
+	writetext AquacordeInnLadyText1
 	yesorno
 	iftrue AquacordeInnLady_HealParty
 	closetext
@@ -31,17 +33,35 @@ AquacordeInnLady_HealParty:
 	special HealMachineAnim
 	pause 30
 	special RestartMapMusic
+	writetext AquacordeInnLadyText2
+	promptbutton
+	writetext AquacordeInnLadyText3
+	waitbutton
 	closetext
 	end
 	
 AquacordeInnLadyText1:
-	text "I wonder what this"
-	line "does?"
+	text "Are your #MON"
+	line "well? Why don't you"
+	cont "rest a bit?"
 	done
 
 AquacordeInnLadyText2:
-	text "Would you like to"
-	line "heal your #MON?"
+	text "How can we humans"
+	line "possibly feel"
+	cont "well when our"
+	
+	para "#MON aren't"
+	line "feeling well?"
+	done
+	
+AquacordeInnLadyText3:
+	text "Come see me any-"
+	line "time your #MON"
+	cont "aren't doing well."
+	
+	para "I'll take care"
+	line "of them!"
 	done
 	
 AquacordeInn_MapEvents:

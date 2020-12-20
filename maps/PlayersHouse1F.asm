@@ -31,7 +31,7 @@ MeetMomRightScript:
 	sjump MeetMomScript
 
 .OnRight:
-	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovement
+	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovementDown
 MeetMomScript:
 	opentext
 	writetext ElmsLookingForYouText
@@ -39,14 +39,14 @@ MeetMomScript:
 	getstring STRING_BUFFER_4, PokegearName
 	scall PlayersHouse1FReceiveItemStd
 	setflag ENGINE_POKEGEAR
-	setflag ENGINE_PHONE_CARD
+	;setflag ENGINE_PHONE_CARD
 	;addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
 	;writetext MomGivesPokegearText
 	;promptbutton
-	special SetDayOfWeek
+	;special SetDayOfWeek
 .SetDayOfWeek:
 	writetext IsItDSTText
 	yesorno
@@ -78,17 +78,17 @@ MeetMomScript:
 	sjump .FinishPhone
 
 .FinishPhone:
-	;writetext InstructionsNextText
-	;waitbutton
+	writetext InstructionsNextText
+	waitbutton
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .FromRight
+	iftrue .FromLeft
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
-	iffalse .FromLeft
+	iffalse .FromRight
 	sjump .Finish
 
 .FromRight:
-	applymovement PLAYERSHOUSE1F_MOM1, MomTurnsBackMovement
+	applymovement PLAYERSHOUSE1F_MOM1, MomWalksBackMovementUp
 	sjump .Finish
 
 .FromLeft:
@@ -105,7 +105,7 @@ MeetMomTalkedScript:
 	sjump MeetMomScript
 
 PokegearName:
-	db "#GEAR@"
+	db "a #GEAR@"
 
 PlayersHouse1FReceiveItemStd:
 	jumpstd ReceiveItemScript
@@ -175,17 +175,29 @@ PlayersHouse1FFridgeScript:
 MomTurnsTowardPlayerMovement:
 	turn_head RIGHT
 	step_end
-
-MomWalksToPlayerMovement:
-	slow_step RIGHT
-	step_end
-
-MomTurnsBackMovement:
-	turn_head LEFT
+	
+MomWalksToPlayerMovementDown:
+	slow_step DOWN
+	turn_head RIGHT
 	step_end
 
 MomWalksBackMovement:
 	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	turn_head UP
+	step_end
+	
+MomWalksBackMovementUp:
+	slow_step UP
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	turn_head UP
 	step_end
 
 ElmsLookingForYouText:
@@ -258,26 +270,30 @@ DontKnowTheInstructionsText:
 	done
 
 InstructionsNextText:
-	text "Phone numbers are"
-	line "stored in memory."
+	; text "Phone numbers are"
+	; line "stored in memory."
 
-	para "Just choose a name"
-	line "you want to call."
+	; para "Just choose a name"
+	; line "you want to call."
 
-	para "Gee, isn't that"
-	line "convenient?"
+	; para "Gee, isn't that"
+	; line "convenient?"
+	
+	text "Why don't you step"
+	line "out and say hello"
+	cont "to the neighbours?"
 	done
 
 HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
+	text "The neighbours are"
+	line "waiting for you."
 
 	para "Hurry up, baby!"
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "So, what did the"
+	line "neighbours want?"
 
 	para "…"
 
@@ -388,8 +404,8 @@ PlayersHouse1F_MapEvents:
 	warp_event  9,  6, PLAYERS_HOUSE_2F, 1
 
 	def_coord_events
-	coord_event  8,  7, SCENE_DEFAULT, MeetMomLeftScript
-	coord_event  9,  7, SCENE_DEFAULT, MeetMomRightScript
+	coord_event  7,  6, SCENE_DEFAULT, MeetMomLeftScript
+	coord_event  7,  7, SCENE_DEFAULT, MeetMomRightScript
 
 	def_bg_events
 	bg_event  2,  5, BGEVENT_READ, PlayersHouse1FStoveScript
@@ -399,8 +415,8 @@ PlayersHouse1F_MapEvents:
 	bg_event  3,  1, BGEVENT_READ, PlayersHouse1FTVScript
 
 	def_object_events
-	object_event  7,  7, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
-	object_event  0,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  7,  7, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  2,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  6,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
+	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	;object_event  4,  4, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FletchlingScript, -1 ;can't uncomment without glitching the player and itself
