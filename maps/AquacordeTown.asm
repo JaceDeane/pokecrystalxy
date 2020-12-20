@@ -42,12 +42,11 @@ AquacordePotionShopSignText:
 AquacordeTrainerTipsText:
 	text "TRAINER TIPS"
 
-	para "No stealing other"
-	line "people's #MON!"
-
-	para "# BALLS are to"
-	line "be thrown only at"
-	cont "wild #MON!"
+	para "#MON gain EXP."
+	line "points and grow"
+	
+	para "stronger by"
+	line "battling."
 	done
 
 AquacordeTown_MapEvents:

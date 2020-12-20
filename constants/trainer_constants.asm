@@ -110,7 +110,7 @@ KRIS EQU __trainer_class__
 	const ERIKA1
 
 	trainerclass YOUNGSTER ; 16
-	const JOEY1
+	const AUSTIN
 	const MIKEY
 	const ALBERT
 	const GORDON

@@ -11,13 +11,13 @@ Route2_MapScripts:
 
 	def_callbacks
 
-TrainerBugCatcherDoug:
-	trainer BUG_CATCHER, DOUG, EVENT_BEAT_BUG_CATCHER_DOUG, BugCatcherDougSeenText, BugCatcherDougBeatenText, 0, .Script
+TrainerYoungsterAustin:
+	trainer YOUNGSTER, AUSTIN, EVENT_BEAT_BUG_CATCHER_DOUG, YoungsterAustinSeenText, YoungsterAustinBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherDougAfterBattleText
+	writetext YoungsterAustinAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -55,16 +55,16 @@ Route2HiddenFullRestore:
 Route2HiddenRevive:
 	hiddenitem REVIVE, EVENT_ROUTE_2_HIDDEN_REVIVE
 
-BugCatcherDougSeenText:
+YoungsterAustinSeenText:
 	text "Why don't girls"
 	line "like bug #MON?"
 	done
 
-BugCatcherDougBeatenText:
+YoungsterAustinBeatenText:
 	text "No good!"
 	done
 
-BugCatcherDougAfterBattleText:
+YoungsterAustinAfterBattleText:
 	text "Time to get in"
 	line "some practice with"
 
@@ -106,7 +106,7 @@ Route2_MapEvents:
 	bg_event  3, 21, BGEVENT_ITEM, Route2HiddenRevive
 
 	def_object_events
-	object_event  7,  6, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDoug, -1
+	object_event  7,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerYoungsterAustin, -1
 	object_event 15, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2DireHit, EVENT_ROUTE_2_DIRE_HIT
 	object_event  4, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MaxPotion, EVENT_ROUTE_2_MAX_POTION
 	object_event 13,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Carbos, EVENT_ROUTE_2_CARBOS

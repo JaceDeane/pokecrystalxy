@@ -37,8 +37,8 @@ ENDM
 
 RestartClock:
 ; If we're here, we had an RTC overflow.
-	ld hl, .ClockTimeMayBeWrongText
-	call PrintText
+	;ld hl, .ClockTimeMayBeWrongText
+	;call PrintText
 	ld hl, wOptions
 	ld a, [hl]
 	push af

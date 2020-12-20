@@ -8,7 +8,7 @@ _OakText7::
 	;double check choice
 	;para "So it's <PLAYER>, then? Did I get that right?"
 	text "<PLAYER>…"
-	line "Très bien! What" ;accented reverse é for "Tres bien"
+	line "Très bien! What"
 	cont "a fantastic name!"
 
 	para "<PLAYER>! Your adv-"
@@ -39,8 +39,8 @@ _ClockTimeMayBeWrongText::
 	prompt
 
 _ClockSetWithControlPadText::
-	text "Set with the"
-	line "Control Pad."
+	text "Set the time with"
+	line "the Control Pad."
 
 	para "Confirm: A Button"
 	line "Cancel:  B Button"
@@ -52,7 +52,7 @@ _ClockIsThisOKText::
 
 _ClockHasResetText::
 	text "The clock has been"
-	line "reset."
+	line "set."
 	done
 
 _LinkTimeoutText::

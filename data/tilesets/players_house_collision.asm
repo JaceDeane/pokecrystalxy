@@ -20,7 +20,7 @@
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 13
 	tilecoll WALL, WALL, WALL, WALL ; 14
 	tilecoll WALL, WALL, WALL, WALL ; 15
-	tilecoll WALL, WALL, FLOOR, TV ; 16
+	tilecoll WINDOW, WALL, FLOOR, TV ; 16
 	tilecoll WALL, WALL, WALL, BOOKSHELF ; 17
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 18
 	tilecoll LADDER, FLOOR, FLOOR, FLOOR ; 19

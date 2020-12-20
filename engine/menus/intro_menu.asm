@@ -390,7 +390,7 @@ Continue:
 	jp FinishContinueFunction
 
 SpawnAfterRed:
-	;ld a, SPAWN_MT_SILVER
+	ld a, SPAWN_VANIVILLE ;ld a, SPAWN_MT_SILVER
 	ld [wDefaultSpawnpoint], a
 
 PostCreditsSpawn:
@@ -633,7 +633,8 @@ Continue_DisplayGameTime:
 	jp PrintNum
 
 OakSpeech:
-	farcall InitClock
+	;farcall InitClock
+	farcall RestartClock
 	call RotateFourPalettesLeft
 	call ClearTilemap
 
