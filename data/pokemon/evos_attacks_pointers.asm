@@ -1,15 +1,15 @@
 ; Evolutions and attacks are grouped together since they're both checked at level-up.
 
 EvosAttacksPointers::
-	dw BulbasaurEvosAttacks
-	dw IvysaurEvosAttacks
-	dw VenusaurEvosAttacks
-	dw CharmanderEvosAttacks
-	dw CharmeleonEvosAttacks
-	dw CharizardEvosAttacks
-	dw SquirtleEvosAttacks
-	dw WartortleEvosAttacks
-	dw BlastoiseEvosAttacks
+	dw ChespinEvosAttacks
+	dw QuilladinEvosAttacks
+	dw ChesnaughtEvosAttacks
+	dw FennekinEvosAttacks
+	dw BraixenEvosAttacks
+	dw DelphoxEvosAttacks
+	dw FroakieEvosAttacks
+	dw FrogadierEvosAttacks
+	dw GreninjaEvosAttacks
 	dw CaterpieEvosAttacks
 	dw MetapodEvosAttacks
 	dw ButterfreeEvosAttacks
@@ -48,8 +48,8 @@ EvosAttacksPointers::
 	dw VileplumeEvosAttacks
 	dw ParasEvosAttacks
 	dw ParasectEvosAttacks
-	dw VenonatEvosAttacks
-	dw VenomothEvosAttacks
+	dw SkiddoEvosAttacks
+	dw GogoatEvosAttacks
 	dw DiglettEvosAttacks
 	dw DugtrioEvosAttacks
 	dw MeowthEvosAttacks
@@ -152,24 +152,15 @@ EvosAttacksPointers::
 	dw DragoniteEvosAttacks
 	dw MewtwoEvosAttacks
 	dw MewEvosAttacks
-	; dw ChikoritaEvosAttacks
-	; dw BayleefEvosAttacks
-	; dw MeganiumEvosAttacks
-	; dw CyndaquilEvosAttacks
-	; dw QuilavaEvosAttacks
-	; dw TyphlosionEvosAttacks
-	; dw TotodileEvosAttacks
-	; dw CroconawEvosAttacks
-	; dw FeraligatrEvosAttacks
-	dw ChespinEvosAttacks
-	dw QuilladinEvosAttacks
-	dw ChesnaughtEvosAttacks
-	dw FennekinEvosAttacks
-	dw BraixenEvosAttacks
-	dw DelphoxEvosAttacks
-	dw FroakieEvosAttacks
-	dw FrogadierEvosAttacks
-	dw GreninjaEvosAttacks
+	dw BulbasaurEvosAttacks
+	dw IvysaurEvosAttacks
+	dw VenusaurEvosAttacks
+	dw CharmanderEvosAttacks
+	dw CharmeleonEvosAttacks
+	dw CharizardEvosAttacks
+	dw SquirtleEvosAttacks
+	dw WartortleEvosAttacks
+	dw BlastoiseEvosAttacks
 	dw SentretEvosAttacks
 	dw FurretEvosAttacks
 	dw HoothootEvosAttacks
@@ -274,8 +265,7 @@ EvosAttacksPointers::
 	; dw FlabebeEvosAttacks
 	; dw FloetteEvosAttacks
 	; dw FlorgesEvosAttacks
-	; dw SkiddoEvosAttacks
-	; dw GogoatEvosAttacks
+	;
 	; dw PanchamEvosAttacks
 	; dw PangoroEvosAttacks
 	; dw FurfrouEvosAttacks

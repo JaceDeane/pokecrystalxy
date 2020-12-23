@@ -19,15 +19,15 @@
 ; - FramesPointers (see gfx/pokemon/frame_pointers.asm)
 ; - EZChat_SortedPokemon (see data/pokemon/ezchat_order.asm)
 	const_def 1
-	const BULBASAUR  ; 01
-	const IVYSAUR    ; 02
-	const VENUSAUR   ; 03
-	const CHARMANDER ; 04
-	const CHARMELEON ; 05
-	const CHARIZARD  ; 06
-	const SQUIRTLE   ; 07
-	const WARTORTLE  ; 08
-	const BLASTOISE  ; 09
+	const CHESPIN    ; 01
+	const QUILLADIN  ; 02
+	const CHESNAUGHT ; 03
+	const FENNEKIN   ; 04
+	const BRAIXEN    ; 05
+	const DELPHOX    ; 06
+	const FROAKIE    ; 07
+	const FROGADIER  ; 08
+	const GRENINJA   ; 09
 	const CATERPIE   ; 0a
 	const METAPOD    ; 0b
 	const BUTTERFREE ; 0c
@@ -66,8 +66,8 @@
 	const VILEPLUME  ; 2d
 	const PARAS      ; 2e
 	const PARASECT   ; 2f
-	const VENONAT    ; 30
-	const VENOMOTH   ; 31
+	const SKIDDO     ; 30
+	const GOGOAT     ; 31
 	const DIGLETT    ; 32
 	const DUGTRIO    ; 33
 	const MEOWTH     ; 34
@@ -171,15 +171,15 @@
 	const MEWTWO     ; 96
 	const MEW        ; 97
 JOHTO_POKEMON EQU const_value
-	const CHESPIN    ; 98
-	const QUILLADIN  ; 99
-	const CHESNAUGHT ; 9a
-	const FENNEKIN   ; 9b
-	const BRAIXEN    ; 9c
-	const DELPHOX    ; 9d
-	const FROAKIE    ; 9e
-	const FROGADIER  ; 9f
-	const GRENINJA   ; a0
+	const BULBASAUR  ; 01
+	const IVYSAUR    ; 02
+	const VENUSAUR   ; 03
+	const CHARMANDER ; 04
+	const CHARMELEON ; 05
+	const CHARIZARD  ; 06
+	const SQUIRTLE   ; 07
+	const WARTORTLE  ; 08
+	const BLASTOISE  ; 09
 	const SENTRET    ; a1
 	const FURRET     ; a2
 	const HOOTHOOT   ; a3

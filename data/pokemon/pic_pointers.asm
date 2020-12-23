@@ -2,24 +2,24 @@
 
 PokemonPicPointers::
 ; entries correspond to Pokémon species, two apiece
-	dba_pic BulbasaurFrontpic
-	dba_pic BulbasaurBackpic
-	dba_pic IvysaurFrontpic
-	dba_pic IvysaurBackpic
-	dba_pic VenusaurFrontpic
-	dba_pic VenusaurBackpic
-	dba_pic CharmanderFrontpic
-	dba_pic CharmanderBackpic
-	dba_pic CharmeleonFrontpic
-	dba_pic CharmeleonBackpic
-	dba_pic CharizardFrontpic
-	dba_pic CharizardBackpic
-	dba_pic SquirtleFrontpic
-	dba_pic SquirtleBackpic
-	dba_pic WartortleFrontpic
-	dba_pic WartortleBackpic
-	dba_pic BlastoiseFrontpic
-	dba_pic BlastoiseBackpic
+	dba_pic ChespinFrontpic
+	dba_pic ChespinBackpic
+	dba_pic QuilladinFrontpic
+	dba_pic QuilladinBackpic
+	dba_pic ChesnaughtFrontpic
+	dba_pic ChesnaughtBackpic
+	dba_pic FennekinFrontpic
+	dba_pic FennekinBackpic
+	dba_pic BraixenFrontpic
+	dba_pic BraixenBackpic
+	dba_pic DelphoxFrontpic
+	dba_pic DelphoxBackpic
+	dba_pic FroakieFrontpic
+	dba_pic FroakieBackpic
+	dba_pic FrogadierFrontpic
+	dba_pic FrogadierBackpic
+	dba_pic GreninjaFrontpic
+	dba_pic GreninjaBackpic
 	dba_pic CaterpieFrontpic
 	dba_pic CaterpieBackpic
 	dba_pic MetapodFrontpic
@@ -96,10 +96,10 @@ PokemonPicPointers::
 	dba_pic ParasBackpic
 	dba_pic ParasectFrontpic
 	dba_pic ParasectBackpic
-	dba_pic VenonatFrontpic
-	dba_pic VenonatBackpic
-	dba_pic VenomothFrontpic
-	dba_pic VenomothBackpic
+	dba_pic SkiddoFrontpic
+	dba_pic SkiddoBackpic
+	dba_pic GogoatFrontpic
+	dba_pic GogoatBackpic
 	dba_pic DiglettFrontpic
 	dba_pic DiglettBackpic
 	dba_pic DugtrioFrontpic
@@ -304,42 +304,24 @@ PokemonPicPointers::
 	dba_pic MewtwoBackpic
 	dba_pic MewFrontpic
 	dba_pic MewBackpic
-	; dba_pic ChikoritaFrontpic
-	; dba_pic ChikoritaBackpic
-	; dba_pic BayleefFrontpic
-	; dba_pic BayleefBackpic
-	; dba_pic MeganiumFrontpic
-	; dba_pic MeganiumBackpic
-	; dba_pic CyndaquilFrontpic
-	; dba_pic CyndaquilBackpic
-	; dba_pic QuilavaFrontpic
-	; dba_pic QuilavaBackpic
-	; dba_pic TyphlosionFrontpic
-	; dba_pic TyphlosionBackpic
-	; dba_pic TotodileFrontpic
-	; dba_pic TotodileBackpic
-	; dba_pic CroconawFrontpic
-	; dba_pic CroconawBackpic
-	; dba_pic FeraligatrFrontpic
-	; dba_pic FeraligatrBackpic
-	dba_pic ChespinFrontpic
-	dba_pic ChespinBackpic
-	dba_pic QuilladinFrontpic
-	dba_pic QuilladinBackpic
-	dba_pic ChesnaughtFrontpic
-	dba_pic ChesnaughtBackpic
-	dba_pic FennekinFrontpic
-	dba_pic FennekinBackpic
-	dba_pic BraixenFrontpic
-	dba_pic BraixenBackpic
-	dba_pic DelphoxFrontpic
-	dba_pic DelphoxBackpic
-	dba_pic FroakieFrontpic
-	dba_pic FroakieBackpic
-	dba_pic FrogadierFrontpic
-	dba_pic FrogadierBackpic
-	dba_pic GreninjaFrontpic
-	dba_pic GreninjaBackpic
+	dba_pic BulbasaurFrontpic
+	dba_pic BulbasaurBackpic
+	dba_pic IvysaurFrontpic
+	dba_pic IvysaurBackpic
+	dba_pic VenusaurFrontpic
+	dba_pic VenusaurBackpic
+	dba_pic CharmanderFrontpic
+	dba_pic CharmanderBackpic
+	dba_pic CharmeleonFrontpic
+	dba_pic CharmeleonBackpic
+	dba_pic CharizardFrontpic
+	dba_pic CharizardBackpic
+	dba_pic SquirtleFrontpic
+	dba_pic SquirtleBackpic
+	dba_pic WartortleFrontpic
+	dba_pic WartortleBackpic
+	dba_pic BlastoiseFrontpic
+	dba_pic BlastoiseBackpic
 	dba_pic SentretFrontpic
 	dba_pic SentretBackpic
 	dba_pic FurretFrontpic
@@ -551,10 +533,7 @@ PokemonPicPointers::
 	; dba_pic FloetteBackpic
 	; dba_pic FlorgesFrontpic
 	; dba_pic FlorgesBackpic
-	; dba_pic SkiddoFrontpic
-	; dba_pic SkiddoBackpic
-	; dba_pic GogoatFrontpic
-	; dba_pic GogoatBackpic
+	;
 	; dba_pic PanchamFrontpic
 	; dba_pic PanchamBackpic
 	; dba_pic PangoroFrontpic
