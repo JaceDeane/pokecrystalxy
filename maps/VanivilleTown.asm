@@ -1,17 +1,20 @@
 	object_const_def
+	const VANIVILLETOWN_RIVAL
+	const VANIVILLETOWN_SHAUNA1
 	const VANIVILLETOWN_TEACHER
 	const VANIVILLETOWN_FISHER
 	const VANIVILLETOWN_BOY
 
 VanivilleTown_MapScripts:
 	def_scene_scripts
-	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script .RivalIntro ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
 
-.DummyScene0:
+.RivalIntro:
+	prioritysjump .MeetRivals
 	end
 
 .DummyScene1:
@@ -22,63 +25,46 @@ VanivilleTown_MapScripts:
 	clearevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 	endcallback
 
-VanivilleTown_TeacherStopsYouScene1:
-	playmusic MUSIC_MOM
-	turnobject VANIVILLETOWN_TEACHER, LEFT
+.MeetRivals:
+	applymovement PLAYER, VanivilleTown_ExitDoor
+	pause 5
+	turnobject VANIVILLETOWN_SHAUNA1, UP
+	turnobject VANIVILLETOWN_RIVAL, UP
+	;playmusic MUSIC_MOM
+	showemote EMOTE_SHOCK, VANIVILLETOWN_RIVAL, 15
 	opentext
-	writetext Text_WaitPlayer
+	writetext Text_RivalIntro1
 	waitbutton
 	closetext
-	turnobject PLAYER, RIGHT
-	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement1
 	opentext
-	writetext Text_WhatDoYouThinkYoureDoing
+	writetext Text_ShaunaIntro1
 	waitbutton
 	closetext
-	follow VANIVILLETOWN_TEACHER, PLAYER
-	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherBringsYouBackMovement1
-	stopfollow
 	opentext
-	writetext Text_ItsDangerousToGoAlone
+	writetext Text_RivalIntro2
 	waitbutton
 	closetext
-	special RestartMapMusic
+	opentext
+	writetext Text_ShaunaIntro2
+	waitbutton
+	closetext
+	pause 5
+	setscene SCENE_FINISHED
+	disappear VANIVILLETOWN_RIVAL
+	disappear VANIVILLETOWN_SHAUNA1
+	;special RestartMapMusic
 	end
-
-VanivilleTown_TeacherStopsYouScene2:
-	playmusic MUSIC_MOM
-	turnobject VANIVILLETOWN_TEACHER, LEFT
-	opentext
-	writetext Text_WaitPlayer
-	waitbutton
-	closetext
-	turnobject PLAYER, RIGHT
-	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement2
-	turnobject PLAYER, UP
-	opentext
-	writetext Text_WhatDoYouThinkYoureDoing
-	waitbutton
-	closetext
-	follow VANIVILLETOWN_TEACHER, PLAYER
-	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherBringsYouBackMovement2
-	stopfollow
-	opentext
-	writetext Text_ItsDangerousToGoAlone
-	waitbutton
-	closetext
-	special RestartMapMusic
-	end
-
+	
 VanivilleTownTeacherScript:
 	faceplayer
 	opentext
-	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	iftrue .CallMom
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .TellMomYoureLeaving
+	;checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
+	;iftrue .CallMom
+	;checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
+	;iftrue .TellMomYoureLeaving
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .MonIsAdorable
-	writetext Text_GearIsImpressive
+	writetext Text_ReallyWantAMon
 	waitbutton
 	givepoke CHESPIN, 5, BERRY ; debug
 	givepoke FENNEKIN, 5, BERRY ; debug
@@ -94,17 +80,17 @@ VanivilleTownTeacherScript:
 	closetext
 	end
 
-.TellMomYoureLeaving:
-	writetext Text_TellMomIfLeaving
-	waitbutton
-	closetext
-	end
+; .TellMomYoureLeaving:
+	; writetext Text_TellMomIfLeaving
+	; waitbutton
+	; closetext
+	; end
 
-.CallMom:
-	writetext Text_CallMomOnGear
-	waitbutton
-	closetext
-	end
+; .CallMom:
+	; writetext Text_CallMomOnGear
+	; waitbutton
+	; closetext
+	; end
 
 VanivilleTownHikerScript:
 	jumptextfaceplayer Text_ScienceIsAmazing
@@ -121,93 +107,154 @@ VanivilleTownPlayersHouseSign:
 VanivilleTownElmsLabSign:
 	jumptext VanivilleTownElmsLabSignText
 
-VanivilleTownElmsHouseSign:
-	jumptext VanivilleTownElmsHouseSignText
-
-VanivilleTown_TeacherRunsToYouMovement1:
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+VanivilleTown_ExitDoor:
+	step DOWN
 	step_end
 
-VanivilleTown_TeacherRunsToYouMovement2:
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	turn_head DOWN
-	step_end
+; VanivilleTown_TeacherRunsToYouMovement2:
+	; step LEFT
+	; step LEFT
+	; step LEFT
+	; step LEFT
+	; step LEFT
+	; turn_head DOWN
+	; step_end
 
-VanivilleTown_TeacherBringsYouBackMovement1:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	turn_head LEFT
-	step_end
+; VanivilleTown_TeacherBringsYouBackMovement1:
+	; step RIGHT
+	; step RIGHT
+	; step RIGHT
+	; step RIGHT
+	; turn_head LEFT
+	; step_end
 
-VanivilleTown_TeacherBringsYouBackMovement2:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	turn_head LEFT
-	step_end
+; VanivilleTown_TeacherBringsYouBackMovement2:
+	; step RIGHT
+	; step RIGHT
+	; step RIGHT
+	; step RIGHT
+	; step RIGHT
+	; turn_head LEFT
+	; step_end
 
-Text_GearIsImpressive:
-	text "Wow, your #GEAR"
-	line "is impressive!"
+; Text_GearIsImpressive:
+	; text "Wow, your #GEAR"
+	; line "is impressive!"
 
-	para "Did your mom get"
-	line "it for you?"
+	; para "Did your mom get"
+	; line "it for you?"
+	; done
+
+; Text_WaitPlayer:
+	; text "Wait, <PLAY_G>!"
+	; done
+
+; Text_WhatDoYouThinkYoureDoing:
+	; text "What do you think"
+	; line "you're doing?"
+	; done
+
+; Text_ItsDangerousToGoAlone:
+	; text "It's dangerous to"
+	; line "go out without a"
+	; cont "#MON!"
+
+	; para "Wild #MON"
+	; line "jump out of the"
+
+	; para "grass on the way"
+	; line "to the next town."
+	; done
+
+Text_RivalIntro1:
+	text "Welcome to"
+	line "VANIVILLE TOWN!"
+	
+	para "My name's <RIVAL>."
+	line "I'm your neighbor."
+	done
+	
+Text_ShaunaIntro1:
+	text "And I'm SHAUNA!"
+	line "Great to meet you!"
+	
+	para "Guess what!"
+	
+	para "We've come to"
+	line "get you!"
+	done
+	
+Text_RivalIntro2:
+	text "<RIVAL>: The est-"
+	line "eemed PROF."
+	cont "SYCAMORE lives"
+	
+	para "here in the"
+	line "KALOS Region."
+	
+	para "I was told he"
+	line "had a request for"
+	cont "five kids,"
+	cont "including us."
+	
+	para "But I'm a little"
+	line "surprised he knows"
+	cont "who you are."
+	
+	para "You did just move"
+	line "to VANIVILLE,"
+	cont "after all."
 	done
 
-Text_WaitPlayer:
-	text "Wait, <PLAY_G>!"
+Text_ShaunaIntro2:
+	text "SHAUNA: We'll wait"
+	line "for you in the"
+	cont "next town over!"
+	
+	para "And you know"
+	line "what?!"
+	
+	para "We're going to get…"
+	line "a #MON!"
+	
+	para "C'mon! Hurry!"
+	line "Let's go!"
 	done
 
-Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+Text_SleepingRhyhorn:
+	text "Grr… Groo…"
 	done
-
-Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
-	cont "#MON!"
-
-	para "Wild #MON"
-	line "jump out of the"
-
-	para "grass on the way"
-	line "to the next town."
+	
+Text_ReallyWantAMon:
+	text "I reeeally want"
+	line "a #MON!"
+	
+	para "Then I could go"
+	line "wherever I want!"
 	done
-
+	
 Text_YourMonIsAdorable:
 	text "Is that a #MON?"
 	line "I wish I had"
 	cont "a #MON!"
 	done
 
-Text_TellMomIfLeaving:
-	text "Hi, <PLAY_G>!"
-	line "Leaving again?"
+; Text_TellMomIfLeaving:
+	; text "Hi, <PLAY_G>!"
+	; line "Leaving again?"
 
-	para "You should tell"
-	line "your mom if you"
-	cont "are leaving."
-	done
+	; para "You should tell"
+	; line "your mom if you"
+	; cont "are leaving."
+	; done
 
-Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #GEAR to"
+; Text_CallMomOnGear:
+	; text "Call your mom on"
+	; line "your #GEAR to"
 
-	para "let her know how"
-	line "you're doing."
-	done
+	; para "let her know how"
+	; line "you're doing."
+	; done
 
 Text_ScienceIsAmazing:
 	text "Science is"
@@ -250,10 +297,6 @@ VanivilleTownElmsLabSignText:
 	text "<RIVAL>'s House"
 	done
 
-VanivilleTownElmsHouseSignText:
-	text "TIERNO's House"
-	done
-
 VanivilleTown_MapEvents:
 	db 0, 0 ; filler
 
@@ -263,16 +306,18 @@ VanivilleTown_MapEvents:
 	warp_event  1,  5, TIERNOS_HOUSE_1F, 1
 
 	def_coord_events
-	coord_event  1,  8, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene1
-	coord_event  1,  9, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene2
+	;coord_event 11,  6, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene1
+	;coord_event 11,  9, SCENE_DEFAULT, VanivilleTown_TeacherStopsYouScene2
 
 	def_bg_events
 	bg_event  4,  6, BGEVENT_READ, VanivilleTownSign
 	bg_event 10, 10, BGEVENT_READ, VanivilleTownPlayersHouseSign
 	bg_event 14, 10, BGEVENT_READ, VanivilleTownElmsLabSign
-	bg_event  0, 10, BGEVENT_READ, VanivilleTownElmsHouseSign
 
 	def_object_events
+	object_event 12,  7, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, -1, EVENT_RIVAL_NEW_BARK_TOWN ; RIVAL
+	object_event 11,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, -1, EVENT_RIVAL_NEW_BARK_TOWN ; SHAUNA
+	;object_event 12, 7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, -1, -1 ; SHAUNA POST-GAME
 	object_event 13, 10, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
 	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownHikerScript, -1
-	object_event  3, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, EVENT_RIVAL_NEW_BARK_TOWN
+	object_event  2,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, -1

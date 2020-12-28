@@ -34,6 +34,8 @@ MeetMomRightScript:
 	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovementDown
 MeetMomScript:
 	opentext
+	writetext MorningFromMom ; needs to be time dependent
+	promptbutton
 	writetext ElmsLookingForYouText
 	promptbutton
 	getstring STRING_BUFFER_4, PokegearName
@@ -80,6 +82,7 @@ MeetMomScript:
 .FinishPhone:
 	writetext InstructionsNextText
 	waitbutton
+	special NameRival
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue .FromLeft
@@ -200,8 +203,19 @@ MomWalksBackMovementUp:
 	turn_head UP
 	step_end
 
+MorningFromMom:
+	text "Morning <PLAYER>!" ;needs to be time dependent
+	done
+
+AfternoonFromMom:
+	text "Afternoon <PLAYER>!"
+	done
+
+EveningFromMom:
+	text "Evening <PLAYER>!"
+	done
+	
 ElmsLookingForYouText:
-	;text "Morning <PLAYER>!" ;needs to be time dependent
 	text "You sure slept"
 	line "well! All rested"
 	cont "up from the move?"
@@ -211,7 +225,7 @@ ElmsLookingForYouText:
 
 	para "Why don't you step"
 	line "out and say hello"
-	cont "to the neighbours?"
+	cont "to the neighbors?"
 
 	para "Oh! Your #MON"
 	line "GEAR is back from"
@@ -281,19 +295,42 @@ InstructionsNextText:
 	
 	text "Why don't you step"
 	line "out and say hello"
-	cont "to the neighbours?"
+	cont "to the neighbors?"
 	done
 
 HurryUpElmIsWaitingText:
-	text "The neighbours are"
+	text "The neighbors are"
 	line "waiting for you."
 
 	para "Hurry up, baby!"
 	done
 
+DontWakeRhyhornText:
+	text "Don't wake RHYHORN,"
+	line "okay?"
+	done
+	
+SpokeToNeighborsText:
+	text "Really?"
+	
+	para "The neighbor kids"
+	line "invited you to"
+	cont "the next town?"
+	
+	para "That's great!"
+	line "I'm glad you were"
+	
+	para "able to make fri-"
+	line "ends so quickly!"
+	
+	para "Okay! Have fun!"
+	line "Stay out of"
+	cont "trouble!"
+	done
+	
 SoWhatWasProfElmsErrandText:
 	text "So, what did the"
-	line "neighbours want?"
+	line "neighbors want?"
 
 	para "…"
 

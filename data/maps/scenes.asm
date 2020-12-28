@@ -11,4 +11,5 @@ MapScenes::
 	;scene_var TIME_CAPSULE,                                wTimeCapsuleSceneID
 	;scene_var VANIVILLE_TOWN,                              wVanivilleTownSceneID
 	scene_var PLAYERS_HOUSE_1F,                            wPlayersHouse1FSceneID
+	scene_var VANIVILLE_TOWN,                              wVanivilleTownSceneID
 	db -1 ; end

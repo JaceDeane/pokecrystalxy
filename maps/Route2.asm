@@ -82,6 +82,7 @@ YoungsterAustinAfterBattleText:
 
 Route2SignText:
 	text "ROUTE 2"
+	line "AVANCE TRAIL"
 
 	para "AQUACORDE TOWN -"
 	line "SANTALUNE CITY"
