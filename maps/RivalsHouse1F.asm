@@ -18,21 +18,13 @@ RivalsMomScript:
 	end
 
 .HaveAMon:
-	checkflag ENGINE_PLAYER_IS_FEMALE
-	iftrue .PlayerIsFemale2
-	writetext Text_RivalsMomSerena2
+	writetext Text_RivalsMomLikesYourMon
 	waitbutton
 	closetext
 	end
 
 .PlayerIsFemale:
 	writetext Text_RivalsMomCalem1
-	waitbutton
-	closetext
-	end
-
-.PlayerIsFemale2:
-	writetext Text_RivalsMomCalem2
 	waitbutton
 	closetext
 	end
@@ -59,7 +51,7 @@ Text_RivalsMomSerena1:
 	
 Text_RivalsMomCalem1:
 	text "Oh, you must be"
-	line "the new young girl"
+	line "the new young lady"
 	cont "from next door."
 	
 	para "Welcome to"
@@ -77,16 +69,18 @@ Text_RivalsMomCalem1:
 	line "come good friends."
 	done
 	
-Text_RivalsMomSerena2:
-	text "Oh! A cute"
-	line "#MON! You should"
-	cont "battle my <RIVAL>."
-	done
+Text_RivalsMomLikesYourMon:
+	text "Hmm! I like the"
+	line "look on your #-"
+	cont "MON's face."
 	
-Text_RivalsMomCalem2:
-	text "Oh! A cool"
-	line "#MON! You should"
-	cont "battle my <RIVAL>."
+	para "I bet that if you"
+	line "and my <RIVAL>"
+	
+	para "battled each"
+	line "other, you'd both"
+	cont "grow from the"
+	cont "experience!"
 	done
 	
 RivalsHouse1F_MapEvents:

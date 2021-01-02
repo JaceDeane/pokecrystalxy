@@ -111,11 +111,12 @@ PicnickerSharonAfterBattleText:
 	line "some more…"
 	done
 
-MtMoonSquareSignText:
-	text "MT.MOON SQUARE"
+Route4SignText:
+	text "ROUTE 4"
+	line "PARTERRE WAY"
 
-	para "Just go up the"
-	line "stairs."
+	para "SANTALUNE CITY -"
+	line "LUMIOSE CITY"
 	done
 
 Route4_MapEvents:
@@ -127,7 +128,7 @@ Route4_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  7, BGEVENT_READ, MtMoonSquareSign
+	bg_event  3,  7, BGEVENT_READ, Route4Sign
 	bg_event 10,  3, BGEVENT_ITEM, Route4HiddenUltraBall
 
 	def_object_events

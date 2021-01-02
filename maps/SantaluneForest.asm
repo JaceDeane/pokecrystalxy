@@ -21,6 +21,8 @@ SantaluneForest_MapEvents:
 	def_warp_events
 	warp_event 16, 47, ROUTE_2, 1
 	warp_event 17, 47, ROUTE_2, 2
+	warp_event  2,  0, ROUTE_3, 1
+	warp_event  3,  0, ROUTE_3, 2
 
 	def_coord_events
 

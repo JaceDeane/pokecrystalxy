@@ -37,6 +37,9 @@ Route2_Blocks:
 SantaluneForest_Blocks:
 	INCBIN "maps/SantaluneForest.blk"
 
+Route3_Blocks:
+	INCBIN "maps/Route3.blk"
+	
 ; breaker
 
 LumioseCitySouth_Blocks:
@@ -53,9 +56,6 @@ LumioseCityNorth_Blocks:
 
 ; Route19_Blocks:
 	; INCBIN "maps/Route19.blk"
-
-; Route3_Blocks:
-	; INCBIN "maps/Route3.blk"
 
 ; Route12_Blocks:
 	; INCBIN "maps/Route12.blk"

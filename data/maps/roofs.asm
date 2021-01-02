@@ -11,8 +11,9 @@ MapGroupRoofs:
 ; values are indexes for Roofs (see below)
 	db -1             ;  0
 	db ROOF_GROUP_0   ;  1 (Vaniville)
-	db ROOF_GROUP_3   ;  2 (Aquacorde)
-	db ROOF_GROUP_4   ;  3 (Lumiose)
+	db ROOF_GROUP_0   ;  2 (Aquacorde)
+	db ROOF_GROUP_1   ;  3 (Santalune)
+	db ROOF_GROUP_2   ;  4 (Lumiose)
 
 Roofs:
 ; entries correspond to ROOF_* constants

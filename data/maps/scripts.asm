@@ -14,6 +14,7 @@ INCLUDE "maps/AquacordeBallShop.asm"
 INCLUDE "maps/AquacordePotionShop.asm"
 INCLUDE "maps/Route2.asm"
 INCLUDE "maps/SantaluneForest.asm"
+INCLUDE "maps/Route3.asm"
 
 SECTION "Map Scripts 2", ROMX
 
@@ -30,7 +31,6 @@ INCLUDE "maps/LumioseCitySouth.asm"
 ; INCLUDE "maps/Route14.asm"
 ; INCLUDE "maps/Route6.asm"
 ; INCLUDE "maps/Route5.asm"
-; INCLUDE "maps/Route3.asm"
 ; INCLUDE "maps/Route4.asm"
 ; INCLUDE "maps/Route23.asm"
 

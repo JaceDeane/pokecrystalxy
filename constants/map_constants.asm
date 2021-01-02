@@ -49,6 +49,11 @@ ENDM
 	
 	newgroup                                                      ;  3
 	
+	map_const ROUTE_3,                                     10, 18 ;  1
+	;map_const SANTALUNE CITY,                               4,  4 ;  2
+	
+	newgroup                                                      ;  4
+	
 	map_const LUMIOSE_CITY_SOUTH,                          40,  9 ;  1
 	map_const LUMIOSE_CITY_NORTH,                          52,  9 ;  2
 	
@@ -66,7 +71,6 @@ ENDM
 	; map_const ROUTE_6,                                     10,  9 ;  1
 	; map_const ROUTE_11,                                    20,  9 ;  2
 	; map_const ROUTE_1,                                     10, 18 ;  1
-	; map_const ROUTE_3,                                     30,  9 ;  1
 	
 	; newgroup                                                      ; 15
 
