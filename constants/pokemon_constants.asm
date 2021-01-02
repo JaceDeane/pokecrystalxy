@@ -28,8 +28,8 @@
 	const FROAKIE    ; 07
 	const FROGADIER  ; 08
 	const GRENINJA   ; 09
-	const CATERPIE   ; 0a
-	const METAPOD    ; 0b
+	const BUNNELBY   ; 0a
+	const DIGGERSBY  ; 0b
 	const BUTTERFREE ; 0c
 	const WEEDLE     ; 0d
 	const KAKUNA     ; 0e
@@ -271,8 +271,6 @@ JOHTO_POKEMON EQU const_value
 	const LUGIA      ; f9
 	const HO_OH      ; fa
 	const CELEBI     ; fb
-	; const BUNNELBY   ; a6
-	; const DIGGERSBY  ; a7
 	; const FLETCHLING ; a8
 	; const FLETCHINDR ; a9
 	; const TALONFLAME ; aa

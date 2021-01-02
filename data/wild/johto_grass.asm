@@ -33,25 +33,25 @@ JohtoGrassWildMons:
 	db 50 percent, 50 percent, 50 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, PIDGEY ; 30%
-	db 2, RATTATA ; 20%
-	db 3, SENTRET ; 20%
-	db 2, CATERPIE ; 10%
+	db 2, PIDGEY ; 20%
+	db 3, BUNNELBY ; 20%
+	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%
 	; day
 	db 2, PIDGEY ; 30%
-	db 2, RATTATA ; 20%
-	db 3, SENTRET ; 20%
-	db 2, CATERPIE ; 10%
+	db 2, PIDGEY ; 20%
+	db 3, BUNNELBY ; 20%
+	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%
 	; nite
 	db 2, PIDGEY ; 30%
-	db 2, RATTATA ; 20%
-	db 3, SENTRET ; 20%
-	db 2, CATERPIE ; 10%
+	db 2, PIDGEY ; 20%
+	db 3, BUNNELBY ; 20%
+	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%

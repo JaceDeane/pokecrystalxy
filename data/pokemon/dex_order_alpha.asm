@@ -31,7 +31,7 @@ AlphabeticalPokedexOrder:
 	; db BLAZIKEN
 	db BRAIXEN
 	; db BUNEARY
-	; db BUNNELBY
+	db BUNNELBY
 	; db CAMERUPT
 	; db CARBINK
 	; db CARVANHA
@@ -50,7 +50,7 @@ AlphabeticalPokedexOrder:
 	; db DEDENNE
 	db DELPHOX
 	; db DIANCIE
-	; db DIGGERSBY
+	db DIGGERSBY
 	db DIGLETT
 	db DITTO
 	; db DOUBLADE

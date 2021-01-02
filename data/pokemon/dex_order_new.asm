@@ -10,6 +10,8 @@ NewPokedexOrder:
 	db FROAKIE
 	db FROGADIER
 	db GRENINJA
+	db BUNNELBY
+	db DIGGERSBY
 	db PIKACHU
 	db RAICHU
 	db WEEDLE

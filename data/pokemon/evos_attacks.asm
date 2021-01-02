@@ -180,19 +180,50 @@ GreninjaEvosAttacks:
 	; db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-CaterpieEvosAttacks:
-	db EVOLVE_LEVEL, 7, METAPOD
+BunnelbyEvosAttacks:
+	db EVOLVE_LEVEL, 20, DIGGERSBY
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, STRING_SHOT
+	db 1, AGILITY
+	db 1, LEER
+	db 7, QUICK_ATTACK
+	db 10, DOUBLESLAP
+	db 13, MUD_SLAP
+	db 15, TAKE_DOWN
+	; db 18, MUD_SHOT
+	db 20, DOUBLE_KICK
+	; db 25, ODOR_SLEUTH
+	db 29, FLAIL
+	db 33, DIG
+	; db 38, BOUNCE
+	db 42, SUPER_FANG
+	; db 47, FACADE
+	db 49, EARTHQUAKE
 	db 0 ; no more level-up moves
 
-MetapodEvosAttacks:
-	db EVOLVE_LEVEL, 10, BUTTERFREE
+DiggersbyEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HARDEN
-	db 7, HARDEN
-	db 0 ; no more level-up moves
+	; db 1, HAMMER_ARM
+	; db 1, ROTOTILLER
+	; db 1, BULLDOZE
+	db 1, SWORDS_DANCE
+	db 1, TACKLE
+	db 1, AGILITY
+	db 1, LEER
+	db 7, QUICK_ATTACK
+	db 13, MUD_SLAP
+	db 15, TAKE_DOWN
+	; db 18, MUD_SHOT
+	db 20, DOUBLE_KICK
+	; db 26, ODOR_SLEUTH
+	db 31, FLAIL
+	db 37, DIG
+	; db 42, BOUNCE
+	db 48, SUPER_FANG
+	; db 53, FACADE
+	db 57, EARTHQUAKE
+	; db 60, HAMMER_ARM
+	db 0 ; no more level-up moves	
 
 ButterfreeEvosAttacks:
 	db 0 ; no more evolutions
@@ -3355,43 +3386,6 @@ CelebiEvosAttacks:
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
 	db 0 ; no more level-up moves
-
-; BunnelbyEvosAttacks:
-	; db EVOLVE_LEVEL, 20, DIGGERSBY
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, LEER
-	; db 5, AGILITY
-	; db 7, QUICK_ATTACK
-	; db 10, DOUBLESLAP
-	; db 13, MUD_SLAP
-	; db 15, TAKE_DOWN
-	; db 18, MUD_SHOT
-	; db 22, DOUBLE_KICK
-	; db 26, FLAIL
-	; db 30, DIG
-	; db 36, SUPER_FANG
-	; db 40, EARTHQUAKE
-	; db 45, FISSURE
-	; db 0 ; no more level-up moves
-
-; DiggersbyEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, LEER
-	; db 5, AGILITY
-	; db 7, QUICK_ATTACK
-	; db 10, DOUBLESLAP
-	; db 13, MUD_SLAP
-	; db 15, TAKE_DOWN
-	; db 18, MUD_SHOT
-	; db 24, DOUBLE_KICK
-	; db 29, FLAIL
-	; db 34, DIG
-	; db 39, SUPER_FANG
-	; db 44, EARTHQUAKE
-	; db 52, FISSURE
-	; db 0 ; no more level-up moves
 
 ; FletchlingEvosAttacks:
 	; db EVOLVE_LEVEL, 17, FLETCHINDR

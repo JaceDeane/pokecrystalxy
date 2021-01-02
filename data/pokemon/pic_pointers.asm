@@ -20,10 +20,10 @@ PokemonPicPointers::
 	dba_pic FrogadierBackpic
 	dba_pic GreninjaFrontpic
 	dba_pic GreninjaBackpic
-	dba_pic CaterpieFrontpic
-	dba_pic CaterpieBackpic
-	dba_pic MetapodFrontpic
-	dba_pic MetapodBackpic
+	dba_pic BunnelbyFrontpic
+	dba_pic BunnelbyBackpic
+	dba_pic DiggersbyFrontpic
+	dba_pic DiggersbyBackpic
 	dba_pic ButterfreeFrontpic
 	dba_pic ButterfreeBackpic
 	dba_pic WeedleFrontpic
@@ -507,10 +507,6 @@ PokemonPicPointers::
 	dba_pic HoOhBackpic
 	dba_pic CelebiFrontpic
 	dba_pic CelebiBackpic
-	; dba_pic BunnelbyFrontpic
-	; dba_pic BunnelbyBackpic
-	; dba_pic DiggersbyFrontpic
-	; dba_pic DiggersbyBackpic
 	; dba_pic FletchlingFrontpic
 	; dba_pic FletchlingBackpic
 	; dba_pic FletchindrFrontpic

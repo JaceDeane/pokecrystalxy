@@ -10,8 +10,8 @@ EvosAttacksPointers::
 	dw FroakieEvosAttacks
 	dw FrogadierEvosAttacks
 	dw GreninjaEvosAttacks
-	dw CaterpieEvosAttacks
-	dw MetapodEvosAttacks
+	dw BunnelbyEvosAttacks
+	dw DiggersbyEvosAttacks
 	dw ButterfreeEvosAttacks
 	dw WeedleEvosAttacks
 	dw KakunaEvosAttacks
@@ -252,8 +252,6 @@ EvosAttacksPointers::
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
-	; dw BunnelbyEvosAttacks
-	; dw DiggersbyEvosAttacks
 	; dw FletchlingEvosAttacks
 	; dw FletchindrEvosAttacks
 	; dw TalonflameEvosAttacks
@@ -265,7 +263,6 @@ EvosAttacksPointers::
 	; dw FlabebeEvosAttacks
 	; dw FloetteEvosAttacks
 	; dw FlorgesEvosAttacks
-	;
 	; dw PanchamEvosAttacks
 	; dw PangoroEvosAttacks
 	; dw FurfrouEvosAttacks
