@@ -175,4 +175,7 @@ hDebugRoomMenuPage::
 endc
 hClockResetTrigger:: db
 
+hTmpd:: db
+hTmpe:: db
+
 	ds 19

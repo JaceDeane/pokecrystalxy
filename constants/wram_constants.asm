@@ -12,6 +12,7 @@ AUTO_INPUT EQU $ff
 	const DEXMODE_OLD
 	const DEXMODE_ABC
 	const DEXMODE_UNOWN
+	const POKEDEX_UNITS
 
 ; wMonType::
 	const_def

@@ -1062,3 +1062,8 @@ ENDM
 checksave: MACRO
 	db checksave_command
 ENDM
+
+	const checkunits_command
+checkunits: MACRO
+	db checkunits_command
+ENDM

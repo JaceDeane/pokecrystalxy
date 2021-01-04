@@ -13,6 +13,8 @@
 	const DEXSTATE_UPDATE_SEARCH_RESULTS_SCR
 	const DEXSTATE_UNOWN_MODE
 	const DEXSTATE_UPDATE_UNOWN_MODE
+	const DEXSTATE_POKEDEX_UNITS
+	const DEXSTATE_UPDATE_POKEDEX_UNITS
 	const DEXSTATE_EXIT
 
 POKEDEX_SCX EQU 5
@@ -202,6 +204,8 @@ Pokedex_RunJumptable:
 	dw Pokedex_UpdateSearchResultsScreen
 	dw Pokedex_InitUnownMode
 	dw Pokedex_UpdateUnownMode
+	dw Pokedex_InitPokedexUnits
+	dw Pokedex_UpdatePokedexUnits
 	dw Pokedex_Exit
 
 Pokedex_IncrementDexPointer:
@@ -1155,12 +1159,24 @@ Pokedex_DrawDexEntryScreenBG:
 	ld bc, 18
 	ld a, " "
 	call ByteFill
+	ld a, [wCurDexMode]
+	bit POKEDEX_UNITS, a
+	jr nz, .metric
 	hlcoord 9, 7
-	ld de, .Height
+	ld de, .HeightImperial
 	call Pokedex_PlaceString
 	hlcoord 9, 9
-	ld de, .Weight
+	ld de, .WeightImperial
 	call Pokedex_PlaceString
+	jr .done
+.metric
+	hlcoord 9, 7
+	ld de, .HeightMetric
+	call Pokedex_PlaceString
+	hlcoord 9, 9
+	ld de, .WeightMetric
+	call Pokedex_PlaceString
+.done
 	hlcoord 0, 17
 	ld de, .MenuItems
 	call Pokedex_PlaceString
@@ -1169,10 +1185,14 @@ Pokedex_DrawDexEntryScreenBG:
 
 .Number: ; unreferenced
 	db $5c, $5d, -1 ; No.
-.Height:
+.HeightImperial:
 	db "HT  ?", $5e, "??", $5f, -1 ; HT  ?'??"
-.Weight:
+.WeightImperial:
 	db "WT   ???lb", -1
+.HeightMetric:
+	db "Ht   ???m", $ff ; HT   ???m"
+.WeightMetric:
+	db "Wt   ???kg", $ff ; WT   ???kg
 .MenuItems:
 	db $3b, " PAGE AREA CRY PRNT", -1
 

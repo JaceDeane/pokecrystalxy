@@ -233,6 +233,7 @@ ScriptCommandTable:
 	dw Script_getname                    ; a7
 	dw Script_wait                       ; a8
 	dw Script_checksave                  ; a9
+	dw Script_checkunits                 ; b4
 
 StartScript:
 	ld hl, wScriptFlags
@@ -2358,5 +2359,13 @@ Script_checkver_duplicate: ; unreferenced
 	ld [wScriptVar], a
 	ret
 
+Script_checkunits:
+; script command 0xb4
+
+	ld a, [wCurDexMode]
+	bit POKEDEX_UNITS, a
+	ld [ScriptVar], a
+	ret
+	
 .gs_version
 	db GS_VERSION
