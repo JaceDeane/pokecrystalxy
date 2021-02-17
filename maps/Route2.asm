@@ -12,11 +12,11 @@ Route2_MapScripts:
 	end
 	
 Route2Fletchling:
-	checkevent EVENT_EXPLODING_TRAP_22 ; EVENT_ROUTE_2_FLETCHLING
+	checkevent EVENT_ROUTE_2_FLETCHLING
 	iftrue NoRoute2Fletchling
 	scall FletchlingEncounter
 	reloadmapafterbattle
-	setevent EVENT_EXPLODING_TRAP_22 ; EVENT_ROUTE_2_FLETCHLING
+	setevent EVENT_ROUTE_2_FLETCHLING
 	end
 
 FletchlingEncounter:
