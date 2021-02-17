@@ -2834,10 +2834,11 @@ wLancesRoomSceneID::                              db
 wHallOfFameSceneID::                              db
 wRoute27SceneID::                                 db
 wVanivilleTownSceneID::                           db
-wElmsLabSceneID::                                 db
+;wElmsLabSceneID::                                 db
 wPlayersHouse1FSceneID::                          db
-wRoute29SceneID::                                 db
-wCherrygroveCitySceneID::                         db
+wAquacordeTownSceneID::                           db
+wRoute2SceneID::                                  db
+;wCherrygroveCitySceneID::                         db
 wMrPokemonsHouseSceneID::                         db
 wRoute32SceneID::                                 db
 wRoute35NationalParkGateSceneID::                 db
