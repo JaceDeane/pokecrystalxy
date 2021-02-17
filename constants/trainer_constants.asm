@@ -27,8 +27,8 @@ CHRIS EQU __trainer_class__
 	const PHONECONTACT_BUENA
 
 KRIS EQU __trainer_class__
-	trainerclass FALKNER ; 1
-	const FALKNER1
+	trainerclass VIOLA ; 1
+	const VIOLA1
 
 	trainerclass WHITNEY ; 2
 	const WHITNEY1

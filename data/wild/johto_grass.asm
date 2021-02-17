@@ -30,7 +30,7 @@ JohtoGrassWildMons:
 	; db 5, RATTATA
 	
 	map_id ROUTE_2
-	db 50 percent, 50 percent, 50 percent ; encounter rates: morn/day/nite
+	db 30 percent, 30 percent, 30 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, PIDGEY ; 30%
 	db 2, PIDGEY ; 20%
