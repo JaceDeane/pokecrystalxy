@@ -144,9 +144,29 @@ MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
 
 LoadForestPalette:
+	ld a, [wCurTimeOfDay]
+	cp DAY_F
+	jr z, .forestday
+	cp NITE_F
+	jr z, .forestnite
 	ld a, BANK(wBGPals1)
 	ld de, wBGPals1
 	ld hl, ForestPalette
+	jr z, .forestback
+	
+.forestday
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ForestPalette palette 8
+	jr z, .forestback
+	
+.forestnite
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ForestPalette palette 16
+	jr z, .forestback
+	
+.forestback
 	ld bc, 8 palettes
 	call FarCopyWRAM
 	ret
