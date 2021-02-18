@@ -6,28 +6,17 @@ RivalsHouse1F_MapScripts:
 	def_callbacks
 
 RivalsMomScript:
-	faceplayer
-	opentext
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .HaveAMon
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .PlayerIsFemale
-	writetext Text_RivalsMomSerena1
-	waitbutton
-	closetext
-	end
+	jumptextfaceplayer Text_RivalsMomSerena1
 
 .HaveAMon:
-	writetext Text_RivalsMomLikesYourMon
-	waitbutton
-	closetext
-	end
+	jumptextfaceplayer Text_RivalsMomLikesYourMon
 
 .PlayerIsFemale:
-	writetext Text_RivalsMomCalem1
-	waitbutton
-	closetext
-	end
+	jumptextfaceplayer Text_RivalsMomCalem1
 	
 Text_RivalsMomSerena1:
 	text "Oh, you must be"
