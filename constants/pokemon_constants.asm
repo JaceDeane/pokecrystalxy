@@ -30,21 +30,22 @@
 	const GRENINJA   ; 09
 	const BUNNELBY   ; 0a
 	const DIGGERSBY  ; 0b
-	const BUTTERFREE ; 0c
-	const WEEDLE     ; 0d
-	const KAKUNA     ; 0e
-	const BEEDRILL   ; 0f
+	const FLETCHLING
+	const FLETCHINDR
+	const TALONFLAME
+	const SCATTERBUG
+	const SPEWPA
+	const VIVILLON
+	const WEEDLE
+	const KAKUNA
+	const BEEDRILL
+	const PIKACHU
+	const RAICHU
 	const PIDGEY     ; 10
 	const PIDGEOTTO  ; 11
 	const PIDGEOT    ; 12
-	const RATTATA    ; 13
-	const RATICATE   ; 14
-	const SPEAROW    ; 15
-	const FEAROW     ; 16
 	const EKANS      ; 17
 	const ARBOK      ; 18
-	const PIKACHU    ; 19
-	const RAICHU     ; 1a
 	const SANDSHREW  ; 1b
 	const SANDSLASH  ; 1c
 	const NIDORAN_F  ; 1d
@@ -171,7 +172,7 @@
 	const MEWTWO     ; 96
 	const MEW        ; 97
 JOHTO_POKEMON EQU const_value
-	const BULBASAUR  ; 01
+	; const BULBASAUR  ; 01
 	const IVYSAUR    ; 02
 	const VENUSAUR   ; 03
 	const CHARMANDER ; 04
@@ -271,12 +272,6 @@ JOHTO_POKEMON EQU const_value
 	const LUGIA      ; f9
 	const HO_OH      ; fa
 	const CELEBI     ; fb
-	; const FLETCHLING ; a8
-	; const FLETCHINDR ; a9
-	; const TALONFLAME ; aa
-	; const SCATTERBUG ; ab
-	; const SPEWPA     ; ac
-	; const VIVILLON   ; ad
 	; const LITLEO     ; ae
 	; const PYROAR     ; af
 	; const FLABEBE    ; b0

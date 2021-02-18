@@ -26,14 +26,14 @@ BugContestant_BugCatcherDon:
 
 BugContestant_BugCatcherEd:
 	db BUG_CATCHER, ED
-	dbw BUTTERFREE, 286
-	dbw BUTTERFREE, 251
+	;dbw BUTTERFREE, 286
+	;dbw BUTTERFREE, 251
 	;dbw CATERPIE,   237
 
 BugContestant_CooltrainerMNick:
 	db COOLTRAINERM, NICK
 	dbw SCYTHER,    357
-	dbw BUTTERFREE, 349
+	;dbw BUTTERFREE, 349
 	dbw PINSIR,     368
 
 BugContestant_PokefanMWilliam:
@@ -74,6 +74,6 @@ BugContestant_YoungsterSamuel:
 
 BugContestant_SchoolboyKipp:
 	db SCHOOLBOY, KIPP
-	dbw PARAS,    267
-	dbw PARAS,      254
+	;dbw PARAS,      267
+	;dbw PARAS,      254
 	dbw KAKUNA,     259

@@ -1,30 +1,31 @@
 AnimationPointers:
-	dw BulbasaurAnimation
-	dw IvysaurAnimation
-	dw VenusaurAnimation
-	dw CharmanderAnimation
-	dw CharmeleonAnimation
-	dw CharizardAnimation
-	dw SquirtleAnimation
-	dw WartortleAnimation
-	dw BlastoiseAnimation
-	dw CaterpieAnimation
-	dw MetapodAnimation
-	dw ButterfreeAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
+	dw NoAnimation
 	dw WeedleAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
+	dw PikachuAnimation
+	dw RaichuAnimation
 	dw PidgeyAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
-	dw RattataAnimation
-	dw RaticateAnimation
-	dw SpearowAnimation
-	dw FearowAnimation
 	dw EkansAnimation
 	dw ArbokAnimation
-	dw PikachuAnimation
-	dw RaichuAnimation
 	dw SandshrewAnimation
 	dw SandslashAnimation
 	dw NidoranFAnimation
@@ -150,7 +151,7 @@ AnimationPointers:
 	dw DragoniteAnimation
 	dw MewtwoAnimation
 	dw MewAnimation
-	dw NoAnimation ; Chespin
+	dw NoAnimation
 	dw NoAnimation
 	dw NoAnimation
 	dw NoAnimation

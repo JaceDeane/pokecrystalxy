@@ -20,10 +20,10 @@ Route2Fletchling:
 	end
 
 FletchlingEncounter:
-	cry PIDGEY ; FLETCHLING
+	cry FLETCHLING
 	setlasttalked -1
 	; loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP ; makes the battle inescapable
-	loadwildmon PIDGEY, 3 ; FLETCHLING, 3
+	loadwildmon FLETCHLING, 3
 	startbattle
 	end
 

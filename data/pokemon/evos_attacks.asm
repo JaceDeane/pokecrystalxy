@@ -225,20 +225,92 @@ DiggersbyEvosAttacks:
 	; db 60, HAMMER_ARM
 	db 0 ; no more level-up moves	
 
-ButterfreeEvosAttacks:
+FletchlingEvosAttacks:
+	db EVOLVE_LEVEL, 17, FLETCHINDR
 	db 0 ; no more evolutions
-	db 1, CONFUSION
-	db 10, CONFUSION
-	db 13, POISONPOWDER
-	db 14, STUN_SPORE
-	db 15, SLEEP_POWDER
-	db 18, SUPERSONIC
-	db 23, WHIRLWIND
-	db 28, GUST
-	db 34, PSYBEAM
-	db 40, SAFEGUARD
+	db 1, TACKLE
+	; db 1, GROWL
+	; db 6, QUICK_ATTACK
+	; db 10, PECK
+	; db 13, AGILITY
+	; db 16, FLAIL
+	; db 21, WING_ATTACK
+	; db 25, RAZOR_WIND
+	; db 29, FLAME_WHEEL
+	; db 40, SKY_ATTACK
 	db 0 ; no more level-up moves
 
+FletchindrEvosAttacks:
+	db EVOLVE_LEVEL, 35, TALONFLAME
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	; db 1, GROWL
+	; db 6, QUICK_ATTACK
+	; db 10, PECK
+	; db 13, AGILITY
+	; db 16, FLAIL
+	; db 17, EMBER
+	; db 23, WING_ATTACK
+	; db 27, RAZOR_WIND
+	; db 32, FLAME_WHEEL
+	; db 38, FLARE_BLITZ
+	; db 44, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+TalonflameEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	; db 1, GROWL
+	; db 6, QUICK_ATTACK
+	; db 10, PECK
+	; db 13, AGILITY
+	; db 16, FLAIL
+	; db 17, EMBER
+	; db 23, WING_ATTACK
+	; db 27, RAZOR_WIND
+	; db 32, FLAME_WHEEL
+	; db 35, EXTREMESPEED
+	; db 41, FLARE_BLITZ
+	; db 49, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+ScatterbugEvosAttacks:
+	db EVOLVE_LEVEL, 9, SPEWPA
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	db 1, STRING_SHOT
+	db 6, STUN_SPORE
+	db 0 ; no more level-up moves
+
+SpewpaEvosAttacks:
+	db EVOLVE_LEVEL, 12, VIVILLON
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	db 1, STRING_SHOT
+	db 1, HARDEN
+	db 6, STUN_SPORE
+	db 9, PROTECT
+	db 0 ; no more level-up moves
+
+VivillonEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	db 1, STRING_SHOT
+	db 1, HARDEN
+	db 6, STUN_SPORE
+	db 9, PROTECT
+	db 12, GUST
+	db 15, SUPERSONIC
+	; db 18, STRUGGLE_BUG
+	db 22, PSYBEAM
+	; db 25, DRAININGKISS
+	db 30, LIGHT_SCREEN
+	db 35, SAFEGUARD
+	; db 40, SIGNAL_BEAM
+	; db 45, QUIVER_DANCE
+	; db 50, HURRICANE
+	db 0 ; no more level-up moves
+	
 WeedleEvosAttacks:
 	db EVOLVE_LEVEL, 7, KAKUNA
 	db 0 ; no more evolutions
@@ -306,57 +378,6 @@ PidgeotEvosAttacks:
 	db 33, WING_ATTACK
 	db 46, AGILITY
 	db 61, MIRROR_MOVE
-	db 0 ; no more level-up moves
-
-RattataEvosAttacks:
-	db EVOLVE_LEVEL, 20, RATICATE
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 7, QUICK_ATTACK
-	db 13, HYPER_FANG
-	db 20, FOCUS_ENERGY
-	db 27, PURSUIT
-	db 34, SUPER_FANG
-	db 0 ; no more level-up moves
-
-RaticateEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 1, QUICK_ATTACK
-	db 7, QUICK_ATTACK
-	db 13, HYPER_FANG
-	db 20, SCARY_FACE
-	db 30, PURSUIT
-	db 40, SUPER_FANG
-	db 0 ; no more level-up moves
-
-SpearowEvosAttacks:
-	db EVOLVE_LEVEL, 20, FEAROW
-	db 0 ; no more evolutions
-	db 1, PECK
-	db 1, GROWL
-	db 7, LEER
-	db 13, FURY_ATTACK
-	db 25, PURSUIT
-	db 31, MIRROR_MOVE
-	db 37, DRILL_PECK
-	db 43, AGILITY
-	db 0 ; no more level-up moves
-
-FearowEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, PECK
-	db 1, GROWL
-	db 1, LEER
-	db 1, FURY_ATTACK
-	db 7, LEER
-	db 13, FURY_ATTACK
-	db 26, PURSUIT
-	db 32, MIRROR_MOVE
-	db 40, DRILL_PECK
-	db 47, AGILITY
 	db 0 ; no more level-up moves
 
 EkansEvosAttacks:
@@ -3386,92 +3407,6 @@ CelebiEvosAttacks:
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
 	db 0 ; no more level-up moves
-
-; FletchlingEvosAttacks:
-	; db EVOLVE_LEVEL, 17, FLETCHINDR
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 6, QUICK_ATTACK
-	; db 10, PECK
-	; db 13, AGILITY
-	; db 16, FLAIL
-	; db 21, WING_ATTACK
-	; db 25, RAZOR_WIND
-	; db 29, FLAME_WHEEL
-	; db 40, SKY_ATTACK
-	; db 0 ; no more level-up moves
-
-; FletchindrEvosAttacks:
-	; db EVOLVE_LEVEL, 35, TALONFLAME
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 6, QUICK_ATTACK
-	; db 10, PECK
-	; db 13, AGILITY
-	; db 16, FLAIL
-	; db 17, EMBER
-	; db 23, WING_ATTACK
-	; db 27, RAZOR_WIND
-	; db 32, FLAME_WHEEL
-	; db 38, FLARE_BLITZ
-	; db 44, SKY_ATTACK
-	; db 0 ; no more level-up moves
-
-; TalonflameEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, GROWL
-	; db 6, QUICK_ATTACK
-	; db 10, PECK
-	; db 13, AGILITY
-	; db 16, FLAIL
-	; db 17, EMBER
-	; db 23, WING_ATTACK
-	; db 27, RAZOR_WIND
-	; db 32, FLAME_WHEEL
-	; db 35, EXTREMESPEED
-	; db 41, FLARE_BLITZ
-	; db 49, SKY_ATTACK
-	; db 0 ; no more level-up moves
-
-; ScatterbugEvosAttacks:
-	; db EVOLVE_LEVEL, 9, SPEWPA
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, STRING_SHOT
-	; db 6, STUN_SPORE
-	; db 0 ; no more level-up moves
-
-; SpewpaEvosAttacks:
-	; db EVOLVE_LEVEL, 12, VIVILLON
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, STRING_SHOT
-	; db 1, HARDEN
-	; db 6, STUN_SPORE
-	; db 9, PROTECT
-	; db 0 ; no more level-up moves
-
-; VivillonEvosAttacks:
-	; db 0 ; no more evolutions
-	; db 1, TACKLE
-	; db 1, STRING_SHOT
-	; db 1, HARDEN
-	; db 6, STUN_SPORE
-	; db 9, PROTECT
-	; db 12, GUST
-	; db 15, SUPERSONIC
-	; db 18, STRUGGLE_BUG
-	; db 22, PSYBEAM
-	; db 25, DRAININGKISS
-	; db 30, LIGHT_SCREEN
-	; db 35, SAFEGUARD
-	; db 40, SIGNAL_BEAM
-	; db 45, QUIVER_DANCE
-	; db 50, HURRICANE
-	; db 0 ; no more level-up moves
 
 ; LitleoEvosAttacks:
 	; db EVOLVE_LEVEL, 35, PYROAR

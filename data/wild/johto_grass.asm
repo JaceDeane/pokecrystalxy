@@ -32,28 +32,55 @@ JohtoGrassWildMons:
 	map_id ROUTE_2
 	db 30 percent, 30 percent, 30 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY ; 30%
-	db 2, PIDGEY ; 20%
+	db 2, FLETCHLING ; 30%
+	db 2, SCATTERBUG ; 20%
 	db 3, BUNNELBY ; 20%
 	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%
 	; day
-	db 2, PIDGEY ; 30%
-	db 2, PIDGEY ; 20%
+	db 2, FLETCHLING ; 30%
+	db 2, SCATTERBUG ; 20%
 	db 3, BUNNELBY ; 20%
 	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%
 	; nite
-	db 2, PIDGEY ; 30%
-	db 2, PIDGEY ; 20%
+	db 2, FLETCHLING ; 30%
+	db 2, SCATTERBUG ; 20%
 	db 3, BUNNELBY ; 20%
 	db 2, BUNNELBY ; 10%
 	db 4, WEEDLE ; 5%
 	db 3, WEEDLE ; 4%
 	db 3, WEEDLE ; 1%
+	
+	map_id SANTALUNE_FOREST
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 3, SCATTERBUG ; 30%
+	db 4, FLETCHLING ; 20%
+	db 3, WEEDLE ; 20%
+	db 4, SPEWPA ; 10%
+	db 3, PIKACHU ; 5%
+	db 4, KAKUNA ; 4%
+	db 4, PIKACHU ; 1%
+	; day
+	db 3, SCATTERBUG ; 30%
+	db 4, FLETCHLING ; 20%
+	db 3, WEEDLE ; 20%
+	db 4, SPEWPA ; 10%
+	db 3, PIKACHU ; 5%
+	db 4, KAKUNA ; 4%
+	db 4, PIKACHU ; 1%
+	; nite
+	db 3, SCATTERBUG ; 30%
+	db 4, FLETCHLING ; 20%
+	db 3, WEEDLE ; 20%
+	db 4, SPEWPA ; 10%
+	db 3, PIKACHU ; 5%
+	db 4, KAKUNA ; 4%
+	db 4, PIKACHU ; 1%
 
 	db -1 ; end

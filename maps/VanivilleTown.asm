@@ -65,7 +65,6 @@ VanivilleTownGirlScript:
 	givepoke CHESPIN, 5, BERRY ; debug
 	givepoke FENNEKIN, 5, BERRY ; debug
 	givepoke FROAKIE, 5, BERRY ; debug
-	givepoke SKIDDO, 5, BERRY ; debug
 	setflag ENGINE_POKEDEX ; debug
 	closetext
 	end

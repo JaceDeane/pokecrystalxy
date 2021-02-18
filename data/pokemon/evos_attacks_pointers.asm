@@ -12,17 +12,22 @@ EvosAttacksPointers::
 	dw GreninjaEvosAttacks
 	dw BunnelbyEvosAttacks
 	dw DiggersbyEvosAttacks
-	dw ButterfreeEvosAttacks
+	dw FletchlingEvosAttacks
+	dw FletchindrEvosAttacks
+	dw TalonflameEvosAttacks
+	dw ScatterbugEvosAttacks
+	dw SpewpaEvosAttacks
+	dw VivillonEvosAttacks
 	dw WeedleEvosAttacks
 	dw KakunaEvosAttacks
 	dw BeedrillEvosAttacks
 	dw PidgeyEvosAttacks
 	dw PidgeottoEvosAttacks
 	dw PidgeotEvosAttacks
-	dw RattataEvosAttacks
-	dw RaticateEvosAttacks
-	dw SpearowEvosAttacks
-	dw FearowEvosAttacks
+	; dw RattataEvosAttacks
+	; dw RaticateEvosAttacks
+	; dw SpearowEvosAttacks
+	; dw FearowEvosAttacks
 	dw EkansEvosAttacks
 	dw ArbokEvosAttacks
 	dw PikachuEvosAttacks
@@ -252,12 +257,6 @@ EvosAttacksPointers::
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
-	; dw FletchlingEvosAttacks
-	; dw FletchindrEvosAttacks
-	; dw TalonflameEvosAttacks
-	; dw ScatterbugEvosAttacks
-	; dw SpewpaEvosAttacks
-	; dw VivillonEvosAttacks
 	; dw LitleoEvosAttacks
 	; dw PyroarEvosAttacks
 	; dw FlabebeEvosAttacks

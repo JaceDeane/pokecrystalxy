@@ -24,36 +24,38 @@ PokemonPicPointers::
 	dba_pic BunnelbyBackpic
 	dba_pic DiggersbyFrontpic
 	dba_pic DiggersbyBackpic
-	dba_pic ButterfreeFrontpic
-	dba_pic ButterfreeBackpic
+	dba_pic FletchlingFrontpic
+	dba_pic FletchlingBackpic
+	dba_pic FletchindrFrontpic
+	dba_pic FletchindrBackpic
+	dba_pic TalonflameFrontpic
+	dba_pic TalonflameBackpic
+	dba_pic ScatterbugFrontpic
+	dba_pic ScatterbugBackpic
+	dba_pic SpewpaFrontpic
+	dba_pic SpewpaBackpic
+	dba_pic VivillonFrontpic
+	dba_pic VivillonBackpic
 	dba_pic WeedleFrontpic
 	dba_pic WeedleBackpic
 	dba_pic KakunaFrontpic
 	dba_pic KakunaBackpic
 	dba_pic BeedrillFrontpic
 	dba_pic BeedrillBackpic
+	dba_pic PikachuFrontpic
+	dba_pic PikachuBackpic
+	dba_pic RaichuFrontpic
+	dba_pic RaichuBackpic
 	dba_pic PidgeyFrontpic
 	dba_pic PidgeyBackpic
 	dba_pic PidgeottoFrontpic
 	dba_pic PidgeottoBackpic
 	dba_pic PidgeotFrontpic
 	dba_pic PidgeotBackpic
-	dba_pic RattataFrontpic
-	dba_pic RattataBackpic
-	dba_pic RaticateFrontpic
-	dba_pic RaticateBackpic
-	dba_pic SpearowFrontpic
-	dba_pic SpearowBackpic
-	dba_pic FearowFrontpic
-	dba_pic FearowBackpic
 	dba_pic EkansFrontpic
 	dba_pic EkansBackpic
 	dba_pic ArbokFrontpic
 	dba_pic ArbokBackpic
-	dba_pic PikachuFrontpic
-	dba_pic PikachuBackpic
-	dba_pic RaichuFrontpic
-	dba_pic RaichuBackpic
 	dba_pic SandshrewFrontpic
 	dba_pic SandshrewBackpic
 	dba_pic SandslashFrontpic
@@ -507,18 +509,6 @@ PokemonPicPointers::
 	dba_pic HoOhBackpic
 	dba_pic CelebiFrontpic
 	dba_pic CelebiBackpic
-	; dba_pic FletchlingFrontpic
-	; dba_pic FletchlingBackpic
-	; dba_pic FletchindrFrontpic
-	; dba_pic FletchindrBackpic
-	; dba_pic TalonflameFrontpic
-	; dba_pic TalonflameBackpic
-	; dba_pic ScatterbugFrontpic
-	; dba_pic ScatterbugBackpic
-	; dba_pic SpewpaFrontpic
-	; dba_pic SpewpaBackpic
-	; dba_pic VivillonFrontpic
-	; dba_pic VivillonBackpic
 	; dba_pic LitleoFrontpic
 	; dba_pic LitleoBackpic
 	; dba_pic PyroarFrontpic
@@ -529,7 +519,6 @@ PokemonPicPointers::
 	; dba_pic FloetteBackpic
 	; dba_pic FlorgesFrontpic
 	; dba_pic FlorgesBackpic
-	;
 	; dba_pic PanchamFrontpic
 	; dba_pic PanchamBackpic
 	; dba_pic PangoroFrontpic

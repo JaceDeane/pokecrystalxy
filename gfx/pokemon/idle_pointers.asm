@@ -1,30 +1,31 @@
 AnimationIdlePointers:
-	dw BulbasaurAnimationIdle
-	dw IvysaurAnimationIdle
-	dw VenusaurAnimationIdle
-	dw CharmanderAnimationIdle
-	dw CharmeleonAnimationIdle
-	dw CharizardAnimationIdle
-	dw SquirtleAnimationIdle
-	dw WartortleAnimationIdle
-	dw BlastoiseAnimationIdle
-	dw CaterpieAnimationIdle
-	dw MetapodAnimationIdle
-	dw ButterfreeAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
+	dw NoAnimationIdle
 	dw WeedleAnimationIdle
 	dw KakunaAnimationIdle
 	dw BeedrillAnimationIdle
+	dw PikachuAnimationIdle
+	dw RaichuAnimationIdle
 	dw PidgeyAnimationIdle
 	dw PidgeottoAnimationIdle
 	dw PidgeotAnimationIdle
-	dw RattataAnimationIdle
-	dw RaticateAnimationIdle
-	dw SpearowAnimationIdle
-	dw FearowAnimationIdle
 	dw EkansAnimationIdle
 	dw ArbokAnimationIdle
-	dw PikachuAnimationIdle
-	dw RaichuAnimationIdle
 	dw SandshrewAnimationIdle
 	dw SandslashAnimationIdle
 	dw NidoranFAnimationIdle
@@ -150,7 +151,7 @@ AnimationIdlePointers:
 	dw DragoniteAnimationIdle
 	dw MewtwoAnimationIdle
 	dw MewAnimationIdle
-	dw NoAnimationIdle ; Chespin
+	dw NoAnimationIdle
 	dw NoAnimationIdle
 	dw NoAnimationIdle
 	dw NoAnimationIdle
