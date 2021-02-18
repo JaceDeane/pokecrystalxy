@@ -34,7 +34,22 @@ MeetMomRightScript:
 	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovementDown
 MeetMomScript:
 	opentext
-	writetext MorningFromMom ; needs to be time dependent
+	checktime MORN
+	iftrue .morn
+	checktime DAY
+	iftrue .day
+	writetext EveningFromMom
+	jump .MeetMomContinue
+	
+.morn
+	writetext MorningFromMom
+	jump .MeetMomContinue
+	
+.day
+	writetext AfternoonFromMom
+	jump .MeetMomContinue
+
+.MeetMomContinue
 	promptbutton
 	writetext ElmsLookingForYouText
 	promptbutton
