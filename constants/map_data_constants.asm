@@ -84,5 +84,3 @@ KALOS_FLYPOINT EQU const_value
 KANTO_FLYPOINT EQU const_value
 	;const FLY_PALLET
 NUM_FLYPOINTS EQU const_value
-
-MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm
