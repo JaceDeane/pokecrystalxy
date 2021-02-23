@@ -71,31 +71,15 @@ MeetMomScript:
 	special InitialSetDSTFlag
 	yesorno
 	iffalse .SetDayOfWeek
-	;sjump .DayOfWeekDone
 	sjump .FinishPhone
 
 .WrongDay:
 	special InitialClearDSTFlag
 	yesorno
 	iffalse .SetDayOfWeek
-.DayOfWeekDone:
+
+.FinishPhone
 	writetext ComeHomeForDSTText
-	yesorno
-	iffalse .ExplainPhone
-	sjump .KnowPhone
-
-.KnowPhone:
-	writetext KnowTheInstructionsText
-	promptbutton
-	sjump .FinishPhone
-
-.ExplainPhone:
-	writetext DontKnowTheInstructionsText
-	promptbutton
-	sjump .FinishPhone
-
-.FinishPhone:
-	writetext InstructionsNextText
 	waitbutton
 	special NameRival
 	closetext
@@ -115,7 +99,7 @@ MeetMomScript:
 
 .Finish:
 	special RestartMapMusic
-	turnobject PLAYERSHOUSE1F_MOM1, LEFT
+	turnobject PLAYERSHOUSE1F_MOM1, UP
 	end
 
 MeetMomTalkedScript:
@@ -143,7 +127,7 @@ MomScript:
 	iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
-	writetext HurryUpElmIsWaitingText
+	writetext NeighborsAreWaitingText
 	waitbutton
 	closetext
 	end
@@ -173,7 +157,7 @@ FletchlingScript:
 	faceplayer
 	opentext
 	writetext FletchlingText
-	cry PIDGEY
+	cry FLETCHLING
 	waitbutton
 	closetext
 	end
@@ -276,9 +260,9 @@ ComeHomeForDSTText:
 	para "for Daylight"
 	line "Saving Time."
 
-	para "By the way, do you"
-	line "know how to use"
-	cont "the PHONE?"
+	; para "By the way, do you"
+	; line "know how to use"
+	; cont "the PHONE?"
 	done
 
 KnowTheInstructionsText:
@@ -313,7 +297,7 @@ InstructionsNextText:
 	cont "to the neighbors?"
 	done
 
-HurryUpElmIsWaitingText:
+NeighborsAreWaitingText:
 	text "The neighbors are"
 	line "waiting for you."
 
@@ -469,6 +453,6 @@ PlayersHouse1F_MapEvents:
 	def_object_events
 	object_event  6,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
 	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  1,  6, SPRITE_GRACE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  5,  3, SPRITE_BIRD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FletchlingScript, -1

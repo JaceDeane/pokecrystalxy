@@ -35,16 +35,10 @@ VanivilleTown_MapScripts:
 	opentext
 	writetext Text_RivalIntro1
 	waitbutton
-	closetext
-	opentext
 	writetext Text_ShaunaIntro1
 	waitbutton
-	closetext
-	opentext
 	writetext Text_RivalIntro2
 	waitbutton
-	closetext
-	opentext
 	writetext Text_ShaunaIntro2
 	waitbutton
 	closetext
@@ -229,6 +223,6 @@ VanivilleTown_MapEvents:
 	object_event 12,  7, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, -1, EVENT_RIVAL_NEW_BARK_TOWN ; RIVAL
 	object_event 11,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, -1, EVENT_RIVAL_NEW_BARK_TOWN ; SHAUNA
 	;object_event 12, 7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, -1, -1 ; SHAUNA POST-GAME
-	object_event 13, 10, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VanivilleTownGirlScript, -1
+	object_event 13, 10, SPRITE_TWIN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VanivilleTownGirlScript, -1
 	object_event  7, 13, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownHikerScript, -1
 	object_event  2,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VanivilleTownBoyScript, -1

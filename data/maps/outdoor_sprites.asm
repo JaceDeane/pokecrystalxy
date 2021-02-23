@@ -24,7 +24,7 @@ LumioseGroupSprites:
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_YOUNGSTER
 	db SPRITE_BIRD
-	db SPRITE_GRAMPS
+	db SPRITE_TWIN
 	db SPRITE_BUG_CATCHER
 	db SPRITE_COOLTRAINER_F
 	; max 9 of 9 walking sprites
