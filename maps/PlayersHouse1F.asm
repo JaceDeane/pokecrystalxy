@@ -82,6 +82,16 @@ MeetMomScript:
 	writetext ComeHomeForDSTText
 	waitbutton
 	special NameRival
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .PlayerIsFemale
+	sjump .FinishPhone2
+	
+.PlayerIsFemale
+	variablesprite SPRITE_RIVAL, SPRITE_CHRIS
+	special LoadUsedSpritesGFX
+	sjump .FinishPhone2
+
+.FinishPhone2
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue .FromLeft
