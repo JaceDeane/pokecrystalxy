@@ -136,7 +136,7 @@ Route3_MapEvents:
 
 	def_warp_events
 	warp_event 14, 35, SANTALUNE_FOREST, 3
-	warp_event 15, 35, SANTALUNE_FOREST, 4
+	;warp_event 15, 35, SANTALUNE_FOREST, 4
 
 	def_coord_events
 

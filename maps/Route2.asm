@@ -92,8 +92,7 @@ Route2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8,  2, SANTALUNE_FOREST, 1
-	warp_event  9,  2, SANTALUNE_FOREST, 2
+	warp_event  9,  3, ROUTE_2_SANTALUNE_FOREST_GATE, 3
 
 	def_coord_events
 	coord_event  6, 31, SCENE_DEFAULT, Route2Fletchling

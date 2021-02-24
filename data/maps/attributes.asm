@@ -118,6 +118,7 @@ ENDM
 	map_attributes AquacordePotionShop, AQUACORDE_POTION_SHOP, $00, 0
 	map_attributes Route2, ROUTE_2, $05, SOUTH
 	connection south, AquacordeTown, AQUACORDE_TOWN, 0
+	map_attributes Route2SantaluneForestGate, ROUTE_2_SANTALUNE_FOREST_GATE, $00, 0
 	map_attributes SantaluneForest, SANTALUNE_FOREST, $00, 0
 	map_attributes Route3, ROUTE_3, $05, 0 ; NORTH
 	;connection north, SantaluneCity, SANTALUNE_CITY, 0

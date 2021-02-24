@@ -45,7 +45,8 @@ ENDM
 	map_const AQUACORDE_BALL_SHOP,                          4,  4 ;  3
 	map_const AQUACORDE_POTION_SHOP,                        4,  4 ;  4
 	map_const ROUTE_2,                                     10, 18 ;  5
-	map_const SANTALUNE_FOREST,                            17, 24 ;  6
+	map_const ROUTE_2_SANTALUNE_FOREST_GATE,                 5, 4 ;  6
+	map_const SANTALUNE_FOREST,                            17, 30 ;  7
 	
 	newgroup                                                      ;  3
 	

@@ -13,6 +13,7 @@ INCLUDE "maps/AquacordeInn.asm"
 INCLUDE "maps/AquacordeBallShop.asm"
 INCLUDE "maps/AquacordePotionShop.asm"
 INCLUDE "maps/Route2.asm"
+INCLUDE "maps/Route2SantaluneForestGate.asm"
 INCLUDE "maps/SantaluneForest.asm"
 INCLUDE "maps/Route3.asm"
 

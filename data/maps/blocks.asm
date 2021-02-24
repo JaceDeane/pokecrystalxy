@@ -34,6 +34,9 @@ AquacordePotionShop_Blocks:
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
 
+Route2SantaluneForestGate_Blocks:
+	INCBIN "maps/NorthSouthGate.blk"
+
 SantaluneForest_Blocks:
 	INCBIN "maps/SantaluneForest.blk"
 
