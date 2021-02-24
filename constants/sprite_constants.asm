@@ -103,6 +103,10 @@
 	const SPRITE_ENTEI ; 63
 	const SPRITE_RAIKOU ; 64
 	const SPRITE_GRACE ; 65
+	const SPRITE_SHAUNA
+	const SPRITE_TIERNO
+	const SPRITE_TREVOR
+	
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_next $80
@@ -164,3 +168,4 @@ SPRITE_VARS EQU const_value
 	const SPRITE_FUCHSIA_GYM_4 ; fa
 	const SPRITE_COPYCAT ; fb
 	const SPRITE_JANINE_IMPERSONATOR ; fc
+	const SPRITE_RIVAL ; f5

@@ -108,3 +108,6 @@ RaikouSpriteGFX::              INCBIN "gfx/sprites/raikou.2bpp"
 SECTION "Sprites 3", ROMX
 
 GraceSpriteGFX::               INCBIN "gfx/sprites/grace.2bpp"
+ShaunaSpriteGFX::              INCBIN "gfx/sprites/shauna.2bpp"
+TiernoSpriteGFX::              INCBIN "gfx/sprites/tierno.2bpp"
+TrevorSpriteGFX::              INCBIN "gfx/sprites/trevor.2bpp"

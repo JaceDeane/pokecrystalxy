@@ -17,8 +17,7 @@ SantaluneGroupSprites:
 ; Route 3, Santalune, Route 4, Route 22
 LumioseGroupSprites:
 ; Lumiose
-	;db SPRITE_RIVAL ; variable sprite
-	db SPRITE_SILVER
+	db SPRITE_RIVAL ; variable sprite
 	db SPRITE_TEACHER
 	db SPRITE_FISHER
 	db SPRITE_COOLTRAINER_M
@@ -26,7 +25,7 @@ LumioseGroupSprites:
 	db SPRITE_BIRD
 	db SPRITE_TWIN
 	db SPRITE_BUG_CATCHER
-	db SPRITE_COOLTRAINER_F
+	db SPRITE_SHAUNA
 	; max 9 of 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
