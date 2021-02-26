@@ -143,6 +143,7 @@ INCLUDE "audio/music/postcredits.asm"
 SECTION "XY Songs", ROMX
 
 INCLUDE "audio/music/santaluneforest.asm"
+INCLUDE "audio/music/kalosroute1.asm"
 
 SECTION "Sound Effects", ROMX
 

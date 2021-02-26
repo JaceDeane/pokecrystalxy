@@ -108,3 +108,4 @@ Music:
 	dba Music_MobileCenter
 ; new to XY
 	dba Music_SantaluneForest
+	dba Music_KalosRoute1

@@ -110,6 +110,7 @@
 	
 ; new to XY
 	const MUSIC_SANTALUNE_FOREST             ;67
+	const MUSIC_KALOS_ROUTE_1                ;68
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64
