@@ -106,6 +106,7 @@
 	const SPRITE_SHAUNA
 	const SPRITE_TIERNO
 	const SPRITE_TREVOR
+	const SPRITE_CUT_TREE
 	
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

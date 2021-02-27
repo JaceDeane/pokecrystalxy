@@ -110,3 +110,4 @@ OverworldSprites:
 	overworld_sprite ShaunaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite TiernoSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite TrevorSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite CutTreeSpriteGFX, 1, STILL_SPRITE, PAL_OW_ROCK

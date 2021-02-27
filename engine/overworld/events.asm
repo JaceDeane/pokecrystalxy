@@ -1088,12 +1088,6 @@ TryTileCollisionEvent::
 	farcall CheckFacingTileForStdScript
 	jr c, .done
 
-	call CheckCutTreeTile
-	jr nz, .whirlpool
-	farcall TryCutOW
-	jr .done
-
-.whirlpool
 	ld a, [wFacingTileID]
 	call CheckWhirlpoolTile
 	jr nz, .waterfall

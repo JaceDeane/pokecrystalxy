@@ -56,6 +56,7 @@ StdScripts::
 	add_stdscript PCScript
 	add_stdscript GameCornerCoinVendorScript
 	add_stdscript HappinessCheckScript
+	add_stdscript CutTreeScript
 
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
@@ -605,7 +606,7 @@ InitializeEventsScript:
 	variablesprite SPRITE_RIVAL, SPRITE_KRIS
 	setevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	setevent EVENT_CERULEAN_GYM_ROCKET
-	setevent EVENT_ROUTE_24_ROCKET
+	; setevent EVENT_ROUTE_24_ROCKET
 	setevent EVENT_ROUTE_25_MISTY_BOYFRIEND
 	setevent EVENT_TRAINERS_IN_CERULEAN_GYM
 	setevent EVENT_COPYCATS_HOUSE_2F_DOLL
@@ -1896,3 +1897,6 @@ Movement_ContestResults_WalkAfterWarp:
 	step DOWN
 	turn_head UP
 	step_end
+	
+CutTreeScript:
+	farjump AskCutTreeScript

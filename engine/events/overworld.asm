@@ -179,7 +179,7 @@ CheckMapForSomethingToCut:
 	ld c, [hl]
 	; See if that block contains something that can be cut.
 	push hl
-	ld hl, CutTreeBlockPointers
+	ld hl, CutGrassBlockPointers
 	call CheckOverworldTileArrays
 	pop hl
 	jr nc, .fail
@@ -202,16 +202,14 @@ CheckMapForSomethingToCut:
 Script_CutFromMenu:
 	reloadmappart
 	special UpdateTimePals
-
-Script_Cut:
 	callasm GetPartyNick
 	writetext UseCutText
 	reloadmappart
-	callasm CutDownTreeOrGrass
+	callasm CutDownGrass
 	closetext
 	end
 
-CutDownTreeOrGrass:
+CutDownGrass:
 	ld hl, wCutWhirlpoolOverworldBlockAddr
 	ld a, [hli]
 	ld h, [hl]
@@ -270,6 +268,33 @@ CheckOverworldTileArrays:
 	ret
 
 INCLUDE "data/collision/field_move_blocks.asm"
+
+Script_CutTree:
+	callasm PrepareOverworldMove
+	writetext Text_UsedCut
+	closetext
+	special WaitSFX
+	scall FieldMovePokepicScript
+	disappear -2
+	callasm CutDownTree
+	closetext
+	end
+
+CutDownTree:
+	xor a
+	ld [hBGMapMode], a
+	call OverworldTextModeSwitch
+	call UpdateSprites
+	call DelayFrame
+	xor a ; Animation type
+	ld e, a
+	farcall OWCutAnimation
+	call BufferScreen
+	call GetMovementPermissions
+	call UpdateSprites
+	call DelayFrame
+	call LoadStandardFont
+	ret
 
 FlashFunction:
 	call .CheckUseFlash
@@ -1760,54 +1785,43 @@ GotOffBikeText:
 	text_far _GotOffBikeText
 	text_end
 
-TryCutOW::
+HasCutAvailable::
 	ld d, CUT
 	call CheckPartyMove
-	jr c, .cant_cut
+	jr c, .no
 
 	ld de, ENGINE_HIVEBADGE
 	call CheckEngineFlag
-	jr c, .cant_cut
+	jr c, .no
 
-	ld a, BANK(AskCutScript)
-	ld hl, AskCutScript
-	call CallScript
-	scf
+.yes
+	xor a
+	jr .done
+
+.no
+	ld a, 1
+	
+.done
+	ld [ScriptVar], a
 	ret
 
-.cant_cut
-	ld a, BANK(CantCutScript)
-	ld hl, CantCutScript
-	call CallScript
-	scf
-	ret
-
-AskCutScript:
+AskCutTreeScript:
+	callasm HasCutAvailable
+	if_equal 1, .no
+	
 	opentext
 	writetext AskCutText
 	yesorno
-	iffalse .declined
-	callasm .CheckMap
 	iftrue Script_Cut
-.declined
 	closetext
 	end
 
-.CheckMap:
-	xor a
-	ld [wScriptVar], a
-	call CheckMapForSomethingToCut
-	ret c
-	ld a, TRUE
-	ld [wScriptVar], a
-	ret
+.no
+	jumptext CanCutText
 
 AskCutText:
 	text_far _AskCutText
 	text_end
-
-CantCutScript:
-	jumptext CanCutText
 
 CanCutText:
 	text_far _CanCutText
