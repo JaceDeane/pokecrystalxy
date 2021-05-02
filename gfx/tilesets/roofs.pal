@@ -4,7 +4,7 @@
 
 ; group 1 (Azalea - Vaniville)
 	RGB 22,20,10, 17,14,03 ; morn/day
-	RGB 11,11,05, 10,09,07 ; nite
+	RGB 12,11,15, 08,06,05 ; nite
 
 ; group 2 (Olivine - Aquacorde)
 	RGB 14,17,31, 07,11,15 ; morn/day
