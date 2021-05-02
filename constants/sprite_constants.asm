@@ -103,9 +103,10 @@
 	const SPRITE_ENTEI ; 63
 	const SPRITE_RAIKOU ; 64
 	const SPRITE_GRACE ; 65
-	const SPRITE_SHAUNA
-	const SPRITE_TIERNO
-	const SPRITE_TREVOR
+	const SPRITE_SHAUNA ;66
+	const SPRITE_TIERNO ;67
+	const SPRITE_TREVOR ;68
+	const SPRITE_VIOLA ;69
 	
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
