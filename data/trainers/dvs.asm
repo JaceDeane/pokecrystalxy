@@ -11,11 +11,7 @@ TrainerClassDVs:
 	dn  7, 12, 13, 13 ; CLAIR
 	dn 13, 13, 13, 13 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
-	dn 13, 12, 13, 13 ; WILL
 	dn 13, 12, 13, 13 ; CAL
-	dn 13, 12, 13, 13 ; BRUNO
-	dn  7, 15, 13, 15 ; KAREN
-	dn 13, 12, 13, 13 ; KOGA
 	dn 13, 12, 13, 13 ; CHAMPION
 	dn  9,  8,  8,  8 ; BROCK
 	dn  7,  8,  8,  8 ; MISTY
@@ -56,8 +52,6 @@ TrainerClassDVs:
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  9,  8,  8,  8 ; CAMPER
 	dn  7, 14, 10,  8 ; EXECUTIVEF
-	dn  9,  8,  8,  8 ; SAGE
-	dn  7,  8,  8,  8 ; MEDIUM
 	dn  9,  8,  8,  8 ; BOARDER
 	dn  9,  8,  8,  8 ; POKEFANM
 	dn  6,  8,  8, 10 ; KIMONO_GIRL
@@ -68,3 +62,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn 13, 13, 13, 13 ; SHAUNA
+	dn 13, 13, 13, 13 ; CALEM
+	dn 13, 13, 13, 13 ; SERENA
+	dn 13, 13, 13, 13 ; TIERNO
+	dn 13, 13, 13, 13 ; TREVOR

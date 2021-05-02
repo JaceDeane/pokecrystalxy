@@ -4,30 +4,30 @@ TrainerPicPointers::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	dba_pic ViolaPic
 	dba_pic WhitneyPic
-	dba_pic BugsyPic
-	dba_pic MortyPic
-	dba_pic PrycePic
-	dba_pic JasminePic
-	dba_pic ChuckPic
-	dba_pic ClairPic
+	dba_pic WhitneyPic
+	dba_pic WhitneyPic
+	dba_pic WhitneyPic
+	dba_pic WhitneyPic
+	dba_pic WhitneyPic
+	dba_pic WhitneyPic
 	dba_pic Rival1Pic
 	dba_pic PokemonProfPic
-	dba_pic WillPic
+	; dba_pic WillPic
 	dba_pic CalPic
-	dba_pic BrunoPic
-	dba_pic KarenPic
-	dba_pic KogaPic
+	; dba_pic BrunoPic
+	; dba_pic KarenPic
+	; dba_pic KogaPic
 	dba_pic ChampionPic
 	dba_pic BrockPic
-	dba_pic MistyPic
-	dba_pic LtSurgePic
+	dba_pic BrockPic
+	dba_pic BrockPic
 	dba_pic ScientistPic
-	dba_pic ErikaPic
+	dba_pic BrockPic
 	dba_pic YoungsterPic
 	dba_pic SchoolboyPic
 	dba_pic BirdKeeperPic
 	dba_pic LassPic
-	dba_pic JaninePic
+	dba_pic BrockPic
 	dba_pic CooltrainermPic
 	dba_pic CooltrainerfPic
 	dba_pic BeautyPic
@@ -57,8 +57,6 @@ TrainerPicPointers::
 	dba_pic PicnickerPic
 	dba_pic CamperPic
 	dba_pic ExecutivefPic
-	dba_pic SagePic
-	dba_pic MediumPic
 	dba_pic BoarderPic
 	dba_pic PokefanmPic
 	dba_pic KimonoGirlPic
@@ -69,3 +67,8 @@ TrainerPicPointers::
 	dba_pic OfficerPic
 	dba_pic GruntfPic
 	dba_pic MysticalmanPic
+	dba_pic ShaunaPic
+	dba_pic CalemPic
+	dba_pic SerenaPic
+	dba_pic TiernoPic
+	dba_pic TrevorPic

@@ -23,13 +23,11 @@ MaleTrainers:
 	db JUGGLER
 	db POKEFANM
 	db OFFICER
-	db SAGE
 	db BIKER
 	db SCIENTIST
 .End
 
 FemaleTrainers:
-	db MEDIUM
 	db LASS
 	db BEAUTY
 	db SKIER

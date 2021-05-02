@@ -3,7 +3,7 @@ BetaLoadPlayerTrainerClass: ; unreferenced
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_class
-	ld c, KAREN ; not KRIS?
+	ld c, LASS ; not KRIS?
 .got_class
 	ld a, c
 	ld [wTrainerClass], a

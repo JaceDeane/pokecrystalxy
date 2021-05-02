@@ -70,22 +70,10 @@ KRIS EQU __trainer_class__
 
 	trainerclass POKEMON_PROF ; a
 
-	trainerclass WILL ; b
-	const WILL1
-
 	trainerclass CAL ; c
 	const CAL1
 	const CAL2
 	const CAL3
-
-	trainerclass BRUNO ; d
-	const BRUNO1
-
-	trainerclass KAREN ; e
-	const KAREN1
-
-	trainerclass KOGA ; f
-	const KOGA1
 
 	trainerclass CHAMPION ; 10
 	const LANCE
@@ -610,29 +598,6 @@ KRIS EQU __trainer_class__
 	const EXECUTIVEF_1
 	const EXECUTIVEF_2
 
-	trainerclass SAGE ; 38
-	const CHOW
-	const NICO
-	const JIN
-	const TROY
-	const JEFFREY
-	const PING
-	const EDMOND
-	const NEAL
-	const LI
-	const GAKU
-	const MASA
-	const KOJI
-
-	trainerclass MEDIUM ; 39
-	const MARTHA
-	const GRACE
-	const BETHANY
-	const MARGRET
-	const ETHEL
-	const REBECCA
-	const DORIS
-
 	trainerclass BOARDER ; 3a
 	const RONALD
 	const BRAD
@@ -644,7 +609,7 @@ KRIS EQU __trainer_class__
 	const ROBERT
 	const JOSHUA
 	const CARTER
-	const TREVOR
+	const TREVORS
 	const BRANDON
 	const JEREMY
 	const COLIN
@@ -664,15 +629,6 @@ KRIS EQU __trainer_class__
 
 	trainerclass TWINS ; 3d
 	const AMYANDMAY1
-	const ANNANDANNE1
-	const ANNANDANNE2
-	const AMYANDMAY2
-	const JOANDZOE1
-	const JOANDZOE2
-	const MEGANDPEG1
-	const MEGANDPEG2
-	const LEAANDPIA1
-	const LEAANDPIA2
 
 	trainerclass POKEFANF ; 3e
 	const BEVERLY1
@@ -701,5 +657,66 @@ KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass SHAUNA ; 44
+	const SHAUNA_1_CHESPIN
+	const SHAUNA_1_FENNEKIN
+	const SHAUNA_1_FROAKIE
+	; const SHAUNA_2_CHESPIN
+	; const SHAUNA_2_FENNEKIN
+	; const SHAUNA_2_FROAKIE
+	; const SHAUNA_3_CHESPIN
+	; const SHAUNA_3_FENNEKIN
+	; const SHAUNA_3_FROAKIE
+	
+	trainerclass CALEM ; 45
+	const CALEM_1_CHESPIN
+	const CALEM_1_FENNEKIN
+	const CALEM_1_FROAKIE
+	; const CALEM_2_CHESPIN
+	; const CALEM_2_FENNEKIN
+	; const CALEM_2_FROAKIE
+	; const CALEM_3_CHESPIN
+	; const CALEM_3_FENNEKIN
+	; const CALEM_3_FROAKIE
+	; const CALEM_4_CHESPIN
+	; const CALEM_4_FENNEKIN
+	; const CALEM_4_FROAKIE
+	; const CALEM_5_CHESPIN
+	; const CALEM_5_FENNEKIN
+	; const CALEM_5_FROAKIE
+	; const CALEM_6_CHESPIN
+	; const CALEM_6_FENNEKIN
+	; const CALEM_6_FROAKIE
+	
+	trainerclass SERENA ; 46
+	const SERENA_1_CHESPIN
+	const SERENA_1_FENNEKIN
+	const SERENA_1_FROAKIE
+	; const SERENA_2_CHESPIN
+	; const SERENA_2_FENNEKIN
+	; const SERENA_2_FROAKIE
+	; const SERENA_3_CHESPIN
+	; const SERENA_3_FENNEKIN
+	; const SERENA_3_FROAKIE
+	; const SERENA_4_CHESPIN
+	; const SERENA_4_FENNEKIN
+	; const SERENA_4_FROAKIE
+	; const SERENA_5_CHESPIN
+	; const SERENA_5_FENNEKIN
+	; const SERENA_5_FROAKIE
+	; const SERENA_6_CHESPIN
+	; const SERENA_6_FENNEKIN
+	; const SERENA_6_FROAKIE
+	
+	trainerclass TIERNO ; 47
+	; const TIERNO_1
+	; const TIERNO_2
+	; const TIERNO_3
+	
+	trainerclass TREVOR ; 48
+	; const TREVOR_1
+	; const TREVOR_2
+	; const TREVOR_3
 
 NUM_TRAINER_CLASSES EQU __trainer_class__

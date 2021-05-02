@@ -12,11 +12,7 @@ TrainerGroups:
 	dw ClairGroup
 	dw Rival1Group
 	dw PokemonProfGroup
-	dw WillGroup
 	dw PKMNTrainerGroup
-	dw BrunoGroup
-	dw KarenGroup
-	dw KogaGroup
 	dw ChampionGroup
 	dw BrockGroup
 	dw MistyGroup
@@ -57,8 +53,6 @@ TrainerGroups:
 	dw PicnickerGroup
 	dw CamperGroup
 	dw ExecutiveFGroup
-	dw SageGroup
-	dw MediumGroup
 	dw BoarderGroup
 	dw PokefanMGroup
 	dw KimonoGirlGroup
@@ -69,3 +63,8 @@ TrainerGroups:
 	dw OfficerGroup
 	dw GruntFGroup
 	dw MysticalmanGroup
+	dw ShaunaGroup
+	dw CalemGroup
+	dw SerenaGroup
+	dw TiernoGroup
+	dw TrevorGroup

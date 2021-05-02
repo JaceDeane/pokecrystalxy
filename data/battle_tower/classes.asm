@@ -39,7 +39,7 @@ BattleTowerTrainers:
 	db "ANDREWS@@@", PICNICKER
 	db "BAHN@@@@@@", POKEMANIAC
 	db "MORI@@@@@@", SCIENTIST
-	db "BUCKMAN@@@", SAGE
+	db "BUCKMAN@@@", SAILOR
 	db "COBB@@@@@@", SCHOOLBOY
 	db "HUGHES@@@@", FISHER
 	db "ARITA@@@@@", KIMONO_GIRL
