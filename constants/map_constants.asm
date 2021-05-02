@@ -40,7 +40,7 @@ ENDM
 
 	newgroup                                                      ;  2
 	
-	map_const AQUACORDE_TOWN,                              10,  9 ;  1
+	map_const AQUACORDE_TOWN,                              10, 15 ;  1
 	map_const AQUACORDE_INN,                                4,  4 ;  2
 	map_const AQUACORDE_BALL_SHOP,                          4,  4 ;  3
 	map_const AQUACORDE_POTION_SHOP,                        4,  4 ;  4
