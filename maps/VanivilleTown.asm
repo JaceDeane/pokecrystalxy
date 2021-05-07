@@ -43,7 +43,10 @@ VanivilleTown_MapScripts:
 	waitbutton
 	closetext
 	pause 5
+	applymovement VANIVILLETOWN_SHAUNA1, ShaunaAwayMovement
+	applymovement VANIVILLETOWN_RIVAL, RivalAwayMovement
 	setscene SCENE_FINISHED
+	;setmapscene AQUACORDE_TOWN, SCENE_AQUACORDETOWN_FRIENDS
 	disappear VANIVILLETOWN_RIVAL
 	disappear VANIVILLETOWN_SHAUNA1
 	;special RestartMapMusic
@@ -85,6 +88,23 @@ VanivilleTownElmsLabSign:
 	jumptext VanivilleTownElmsLabSignText
 
 VanivilleTown_ExitDoor:
+	step DOWN
+	step_end
+	
+ShaunaAwayMovement:
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step_end
+	
+RivalAwayMovement:
+	step LEFT
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
 	step DOWN
 	step_end
 
