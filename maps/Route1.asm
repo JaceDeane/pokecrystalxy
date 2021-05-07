@@ -24,6 +24,6 @@ Route1_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  1,  5, BGEVENT_READ, Route1Sign
+	bg_event  1,  9, BGEVENT_READ, Route1Sign
 
 	def_object_events

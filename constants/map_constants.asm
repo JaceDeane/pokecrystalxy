@@ -36,7 +36,7 @@ ENDM
 	map_const RIVALS_HOUSE_2F,                              3,  3 ;  5
 	map_const TIERNOS_HOUSE_1F,                             4,  4 ;  6
 	map_const TIERNOS_HOUSE_2F,                             4,  3 ;  7
-	map_const ROUTE_1,                                      3,  5 ;  8
+	map_const ROUTE_1,                                      3,  9 ;  8
 
 	newgroup                                                      ;  2
 	
